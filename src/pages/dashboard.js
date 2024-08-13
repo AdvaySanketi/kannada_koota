@@ -37,7 +37,7 @@ import { Checkbox } from "@/components/checkbox";
 import { Textarea } from "@/components/textarea";
 import { PencilIcon, TrashIcon } from "@heroicons/react/24/outline";
 
-const SESSION_DURATION = 2 * 60 * 60 * 1000;
+const SESSION_DURATION = 3 * 60 * 60 * 1000;
 
 const SettingsModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
