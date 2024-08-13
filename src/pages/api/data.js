@@ -1,69 +1,79 @@
-const axios = require("axios");
-var http = require('http');
-const fetch = require('node-fetch');
+import clientPromise from "@/lib/mongo";
 
-export const getBookmarks = async (bid) => {
+export const getUpcomingEvents = async () => {
   try {
-    const response = await axios.get('https://ts-research.onrender.com/api/bookmarks/', {
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'web',
-        'bid': bid
-      }
-    });
-    return response.data;
+    const client = await clientPromise;
+    const db = client.db("main");
+    const collection = db.collection("events");
+
+    const events = await collection.find({ type: "upcoming" }).toArray();
+    res.status(200).json(events);
   } catch (error) {
-    console.error('Error fetching bookmarks:', error);
-    throw error;
+    res.status(500).json({ error: "Failed to fetch events" });
   }
 };
 
-export const removeBookmark = async (bid, doi) => {
+export const getPastEvents = async () => {
   try {
-    const response = await axios.delete('https://ts-research.onrender.com/api/bookmarks/', {
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'web',
-        'bid': bid,
-        'paperId': doi
-      }
-    });
-    return response.data;
+    const client = await clientPromise;
+    const db = client.db("main");
+    const collection = db.collection("events");
+
+    const events = await collection.find({ type: "past" }).toArray();
+    res.status(200).json(events);
   } catch (error) {
-    console.error('Error removing bookmark:', error);
-    throw error;
+    res.status(500).json({ error: "Failed to fetch events" });
   }
 };
 
-export const getBID = async (email) => {
+export const getAnnouncements = async () => {
   try {
-    const response = await axios.get('https://ts-research.onrender.com/api/bookmarks/bid/get/', {
-      headers: {
-        'Content-Type': 'application/json',
-        'email': email
-      }
-    });
-    return response.data;
+    const client = await clientPromise;
+    const db = client.db("main");
+    const collection = db.collection("announcements");
+
+    const announcements = await collection.find({}).toArray();
+    res.status(200).json(announcements);
   } catch (error) {
-    console.error('Error getting bid:', error);
-    return error.response.data;
+    res.status(500).json({ error: "Failed to fetch events" });
   }
 };
 
-export const getAuth = async (email, name, orcidId, key) => {
+export const getArticles = async () => {
   try {
-    console.log('In the api')
-    console.log(email, name, orcidId, key)
-    const response = await axios.post('https://ts-research.onrender.com/api/auth/login', {
-      email: email,
-      name: name,
-      orcid: orcidId,
-      key: key
-    });
-    console.log(response)
-    return response.data;
+    const client = await clientPromise;
+    const db = client.db("main");
+    const collection = db.collection("articles");
+
+    const articles = await collection.find({}).toArray();
+    res.status(200).json(articles);
   } catch (error) {
-    console.error('Error logging in:', error);
-    return error.response.data;
+    res.status(500).json({ error: "Failed to fetch events" });
+  }
+};
+
+export const getMembers = async () => {
+  try {
+    const client = await clientPromise;
+    const db = client.db("main");
+    const collection = db.collection("members");
+
+    const members = await collection.find({}).toArray();
+    res.status(200).json(members);
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch events" });
+  }
+};
+
+export const adminLogin = async (user, pwd) => {
+  try {
+    const client = await clientPromise;
+    const db = client.db("main");
+    const collection = db.collection("members");
+
+    const members = await collection.find({}).toArray();
+    res.status(200).json(members);
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch events" });
   }
 };

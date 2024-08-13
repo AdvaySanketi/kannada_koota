@@ -9,6 +9,42 @@ export default function EventsPage() {
   const [language, setLanguage] = useState("kn");
   const [highlight, setHighlight] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
+  const [events, setEvents] = useState([]);
+  const [pastEvents, setPastEvents] = useState([]);
+
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const response = await fetch("/api/past_events");
+
+        const data = await response.json();
+        console.log(data);
+        if (response.status == 200) {
+          setPastEvents(data);
+        }
+      } catch (error) {
+        console.error("Failed to fetch past events:", error);
+      }
+    };
+
+    fetchEvents();
+  }, []);
+
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const response = await fetch("/api/events");
+
+        const data = await response.json();
+        console.log(data);
+        setEvents(data);
+      } catch (error) {
+        console.error("Failed to fetch upcoming events:", error);
+      }
+    };
+
+    fetchEvents();
+  }, []);
 
   // Function to toggle between languages
   const toggleLanguage = () => {
@@ -32,20 +68,16 @@ export default function EventsPage() {
       pastEvents: "Past Events",
       eventDetails:
         "Discover our exciting upcoming events and join us for an amazing experience!",
-      event1: "Kannada Literature Festival",
-      event2: "Traditional Karnataka Dance Workshop",
-      event3: "Tech Innovations in Karnataka",
-      event4: "Cultural Evening: Music and Dance",
+      noUpcomingEvents:
+        "No Upcoming Events at the moment. Please stay on the lookout for any updates.",
     },
     kn: {
       upcomingEvents: "ಈ ಸೆಮಿಸ್ಟರ್‌ನ ಆಗಮಿಸುತ್ತಿರುವ ಘಟನೆಗಳು",
       pastEvents: "ಹಿಂದಿನ ಘಟನೆಗಳು",
       eventDetails:
         "ನಮ್ಮ ಉಲ್ಲೇಖನೀಯ ಉಲ್ಲೇಖಿತ ಘಟನೆಗಳನ್ನು ಅನ್ವೇಷಿಸಿ ಮತ್ತು ಅద్భುತ ಅನುಭವಕ್ಕಾಗಿ ನಮಗೆ ಸೇರುವಂತೆ ಬರಮಾಡಿ!",
-      event1: "ಕನ್ನಡ ಸಾಹಿತ್ಯ ಮಹೋತ್ಸವ",
-      event2: "ಪ್ರದೇಶೀಯ ಕರ್ನಾಟಕ ನೃತ್ಯ ಕಾರ್ಯಾಗಾರ",
-      event3: "ತಂತ್ರಜ್ಞಾನ ನಾವೀನ್ಯತೆಗಳು ಕರ್ನಾಟಕದಲ್ಲಿ",
-      event4: "ಸಾಂಸ್ಕೃತಿಕ ಸಂಜೆ: ಸಂಗೀತ ಮತ್ತು ನೃತ್ಯ",
+      noUpcomingEvents:
+        "ಈ ಕ್ಷಣದಲ್ಲಿ ಯಾವುದೇ ಆಗಮಿಸುತ್ತಿರುವ ಘಟನೆಗಳಿಲ್ಲ. ದಯವಿಟ್ಟು ಯಾವುದೇ ನವೀಕರಣಗಳಿಗೆ ಕಾಯಿರಿ.",
     },
   };
 
@@ -154,82 +186,45 @@ export default function EventsPage() {
             {textContent[language].eventDetails}
           </p>
           <div className="container mx-auto px-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-                <img
-                  src="/karnataka.jpg"
-                  width={400}
-                  height={225}
-                  alt={textContent[language].event1}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">
-                    {textContent[language].event1}
-                  </h3>
-                  <p className="text-gray-700 dark:text-gray-400 mb-4">
-                    Join us for an enriching experience at the Kannada
-                    Literature Festival.
-                  </p>
-                  <Link
-                    href="#"
-                    className="text-primary hover:underline"
-                    prefetch={false}
+            {events.length > 0 ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {events.map((eve, index) => (
+                  <div
+                    key={index}
+                    className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden"
                   >
-                    {language === "en" ? "Learn More" : "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ"}
-                  </Link>
-                </div>
+                    <img
+                      src="/karnataka.jpg"
+                      width={400}
+                      height={225}
+                      alt={eve.title}
+                      className="w-full h-48 object-cover"
+                    />
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold mb-2">
+                        {language === "kn" ? eve.title : eve.en_title}
+                      </h3>
+                      <p className="text-gray-700 dark:text-gray-400 mb-4">
+                        {language === "kn" ? eve.desc : eve.en_desc}
+                      </p>
+                      <Link
+                        href="#"
+                        className="text-primary hover:underline"
+                        prefetch={false}
+                      >
+                        {language === "en"
+                          ? "Learn More"
+                          : "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ"}
+                      </Link>
+                    </div>
+                  </div>
+                ))}
               </div>
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-                <img
-                  src="/karnataka.jpg"
-                  width={400}
-                  height={225}
-                  alt={textContent[language].event2}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">
-                    {textContent[language].event2}
-                  </h3>
-                  <p className="text-gray-700 dark:text-gray-400 mb-4">
-                    Explore Karnataka's traditional dance forms at our workshop.
-                  </p>
-                  <Link
-                    href="#"
-                    className="text-primary hover:underline"
-                    prefetch={false}
-                  >
-                    {language === "en" ? "Learn More" : "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ"}
-                  </Link>
-                </div>
-              </div>
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-                <img
-                  src="/karnataka.jpg"
-                  width={400}
-                  height={225}
-                  alt={textContent[language].event3}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">
-                    {textContent[language].event3}
-                  </h3>
-                  <p className="text-gray-700 dark:text-gray-400 mb-4">
-                    Discover the latest tech innovations coming out of
-                    Karnataka.
-                  </p>
-                  <Link
-                    href="#"
-                    className="text-primary hover:underline"
-                    prefetch={false}
-                  >
-                    {language === "en" ? "Learn More" : "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ"}
-                  </Link>
-                </div>
-              </div>
-            </div>
+            ) : (
+              <p className="text-lg text-gray-700 dark:text-gray-400">
+                {textContent[language].noUpcomingEvents}
+              </p>
+            )}
           </div>
         </section>
 
@@ -239,105 +234,32 @@ export default function EventsPage() {
           </h1>
           <div className="container mx-auto px-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-                <img
-                  src="/karnataka.jpg"
-                  width={400}
-                  height={225}
-                  alt={textContent[language].event1}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">
-                    {textContent[language].event1}
-                  </h3>
-                  <p className="text-gray-700 dark:text-gray-400 mb-4">
-                    Join us for an enriching experience at the Kannada
-                    Literature Festival.
-                  </p>
-                  <Link
-                    href="#"
-                    className="text-primary hover:underline"
-                    prefetch={false}
-                  >
-                    {language === "en" ? "Learn More" : "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ"}
-                  </Link>
+              {pastEvents.map((eve, index) => (
+                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                  <img
+                    src="/karnataka.jpg"
+                    width={400}
+                    height={225}
+                    alt={eve.title}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2">
+                      {language == "kn" ? eve.title : eve.en_title}
+                    </h3>
+                    <p className="text-gray-700 dark:text-gray-400 mb-4">
+                      {language == "kn" ? eve.desc : eve.en_desc}
+                    </p>
+                    <Link
+                      href="#"
+                      className="text-primary hover:underline"
+                      prefetch={false}
+                    >
+                      {language === "en" ? "Learn More" : "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ"}
+                    </Link>
+                  </div>
                 </div>
-              </div>
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-                <img
-                  src="/karnataka.jpg"
-                  width={400}
-                  height={225}
-                  alt={textContent[language].event2}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">
-                    {textContent[language].event2}
-                  </h3>
-                  <p className="text-gray-700 dark:text-gray-400 mb-4">
-                    Explore Karnataka's traditional dance forms at our workshop.
-                  </p>
-                  <Link
-                    href="#"
-                    className="text-primary hover:underline"
-                    prefetch={false}
-                  >
-                    {language === "en" ? "Learn More" : "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ"}
-                  </Link>
-                </div>
-              </div>
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-                <img
-                  src="/karnataka.jpg"
-                  width={400}
-                  height={225}
-                  alt={textContent[language].event3}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">
-                    {textContent[language].event3}
-                  </h3>
-                  <p className="text-gray-700 dark:text-gray-400 mb-4">
-                    Discover the latest tech innovations coming out of
-                    Karnataka.
-                  </p>
-                  <Link
-                    href="#"
-                    className="text-primary hover:underline"
-                    prefetch={false}
-                  >
-                    {language === "en" ? "Learn More" : "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ"}
-                  </Link>
-                </div>
-              </div>
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-                <img
-                  src="/karnataka.jpg"
-                  width={400}
-                  height={225}
-                  alt={textContent[language].event4}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">
-                    {textContent[language].event4}
-                  </h3>
-                  <p className="text-gray-700 dark:text-gray-400 mb-4">
-                    Enjoy a cultural evening filled with music and dance
-                    performances.
-                  </p>
-                  <Link
-                    href="#"
-                    className="text-primary hover:underline"
-                    prefetch={false}
-                  >
-                    {language === "en" ? "Learn More" : "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ"}
-                  </Link>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
@@ -359,12 +281,7 @@ export default function EventsPage() {
           </p>
         </div>
       </footer>
-      {isModalOpen && (
-        <AdminLoginModal
-          onClose={() => setModalOpen(false)}
-          // onAuthenticate={handleAuthenticate}
-        />
-      )}
+      {isModalOpen && <AdminLoginModal onClose={() => setModalOpen(false)} />}
     </div>
   );
 }

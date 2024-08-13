@@ -1,28 +1,37 @@
 import { useState } from "react";
+import { useRouter } from "next/router";
 import { Card, CardContent, CardFooter } from "@/components/card";
 import { Label } from "@/components/label";
 import { Input } from "@/components/input";
 import { Button } from "@/components/button";
 import { Snackbar } from "@/components/snackbar";
+import axios from "axios";
 
-export const AdminLoginModal = ({ onClose, onAuthenticate }) => {
+export const AdminLoginModal = ({ onClose }) => {
+  const router = useRouter();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [showSnackbar, setShowSnackbar] = useState(false);
 
-  const handleLogin = () => {
-    if (!username || !password) {
-      setError("Please enter your username and password.");
-      setShowSnackbar(true);
-      return;
-    }
+  const handleLogin = async (e) => {
+    e.preventDefault();
 
-    if (username === "admin" && password === "0909") {
-      onAuthenticate();
-      onClose();
-    } else {
-      setError("Invalid username or password.");
+    try {
+      const response = await axios.post("/api/admin", { username, password });
+      if (response.status == 200) {
+        const loginTime = new Date().getTime();
+        localStorage.setItem("loggedIn", "true");
+        localStorage.setItem("loginTime", loginTime);
+        router.push("/dashboard");
+        onClose();
+      } else {
+        setError(response?.data?.error || "An error occurred");
+        setShowSnackbar(true);
+      }
+    } catch (err) {
+      console.error("Error logging in:", err);
+      setError(err.response?.data?.error || "An error occurred");
       setShowSnackbar(true);
     }
   };
@@ -31,20 +40,19 @@ export const AdminLoginModal = ({ onClose, onAuthenticate }) => {
     setShowSnackbar(false);
   };
 
-  // Handle click on the backdrop to close the modal
   const handleBackdropClick = (e) => {
-    e.stopPropagation(); // Prevent click event from bubbling up to the backdrop
-    onClose(); // Close the modal
+    e.stopPropagation();
+    onClose();
   };
 
   return (
     <div
       className="fixed inset-0 flex items-center justify-center bg-gray-700 bg-opacity-50"
-      onClick={handleBackdropClick} // Close the modal when clicking outside
+      onClick={handleBackdropClick}
     >
       <div
         className="bg-gray-100 dark:bg-gradient-to-br from-[#0F172A] to-[#1E293B] rounded-lg shadow-lg max-w-sm w-full p-6"
-        onClick={(e) => e.stopPropagation()} // Prevent click event from bubbling up
+        onClick={(e) => e.stopPropagation()}
       >
         {showSnackbar && (
           <Snackbar message={error} onClose={closeSnackbar} bgColor="red" />

@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTheme } from "@/context/ThemeContext";
 import Link from "next/link";
 import { Button } from "@/components/button";
 import { AdminLoginModal } from "@/components/adminLoginModal";
 
 const seeds = [
-  "Bob",
   "cali",
+  "bob",
   "lilly",
   "cuddles",
   "george",
@@ -32,6 +32,25 @@ export default function AboutUsPage() {
   const [language, setLanguage] = useState("kn");
   const [highlight, setHighlight] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
+  const [members, setMembers] = useState([]);
+
+  useEffect(() => {
+    const fetchMembers = async () => {
+      try {
+        const response = await fetch("/api/members");
+
+        const data = await response.json();
+        console.log(data);
+        if (response.status == 200) {
+          setMembers(data);
+        }
+      } catch (error) {
+        console.error("Failed to fetch members:", error);
+      }
+    };
+
+    fetchMembers();
+  }, []);
 
   // Function to toggle between languages
   const toggleLanguage = () => {
@@ -61,28 +80,28 @@ export default function AboutUsPage() {
   };
 
   // Members list with roles
-  const members = [
-    { name: "Arjun Reddy", domain: "Club Head", isHead: true },
-    { name: "Sanya Patel", domain: "Vice President", isHead: true },
-    { name: "Ravi Kumar", domain: "IT Head", isHead: true },
-    { name: "Priya Sharma", domain: "EVM Head", isHead: true },
-    { name: "Amit Joshi", domain: "Cultural Head", isHead: true },
-    { name: "Nisha Rao", domain: "Events", isHead: false },
-    { name: "Vikram Singh", domain: "Marketing", isHead: false },
-    { name: "Sneha Gupta", domain: "Finance", isHead: false },
-    { name: "Rajesh Soni", domain: "Public Relations", isHead: false },
-    { name: "Meera Nair", domain: "Content", isHead: false },
-    { name: "Ankit Verma", domain: "Logistics", isHead: false },
-    { name: "Ritika Agarwal", domain: "Design", isHead: false },
-    { name: "Deepak Sharma", domain: "Community", isHead: false },
-    { name: "Tanvi Jain", domain: "Volunteers", isHead: false },
-    { name: "Kiran Rao", domain: "Operations", isHead: false },
-    { name: "Siddharth Desai", domain: "Outreach", isHead: false },
-    { name: "Simran Kaur", domain: "Social Media", isHead: false },
-    { name: "Gaurav Mehta", domain: "Fundraising", isHead: false },
-    { name: "Aisha Khan", domain: "Coordination", isHead: false },
-    { name: "Rajiv Menon", domain: "Technical Support", isHead: false },
-  ];
+  // const members = [
+  //   { name: "Arjun Reddy", domain: "Club Head", isHead: true },
+  //   { name: "Sanya Patel", domain: "Vice President", isHead: true },
+  //   { name: "Ravi Kumar", domain: "IT Head", isHead: true },
+  //   { name: "Priya Sharma", domain: "EVM Head", isHead: true },
+  //   { name: "Amit Joshi", domain: "Cultural Head", isHead: true },
+  //   { name: "Nisha Rao", domain: "Events", isHead: false },
+  //   { name: "Vikram Singh", domain: "Marketing", isHead: false },
+  //   { name: "Sneha Gupta", domain: "Finance", isHead: false },
+  //   { name: "Rajesh Soni", domain: "Public Relations", isHead: false },
+  //   { name: "Meera Nair", domain: "Content", isHead: false },
+  //   { name: "Ankit Verma", domain: "Logistics", isHead: false },
+  //   { name: "Ritika Agarwal", domain: "Design", isHead: false },
+  //   { name: "Deepak Sharma", domain: "Community", isHead: false },
+  //   { name: "Tanvi Jain", domain: "Volunteers", isHead: false },
+  //   { name: "Kiran Rao", domain: "Operations", isHead: false },
+  //   { name: "Siddharth Desai", domain: "Outreach", isHead: false },
+  //   { name: "Simran Kaur", domain: "Social Media", isHead: false },
+  //   { name: "Gaurav Mehta", domain: "Fundraising", isHead: false },
+  //   { name: "Aisha Khan", domain: "Coordination", isHead: false },
+  //   { name: "Rajiv Menon", domain: "Technical Support", isHead: false },
+  // ];
 
   return (
     <div
@@ -246,12 +265,7 @@ export default function AboutUsPage() {
           </p>
         </div>
       </footer>
-      {isModalOpen && (
-        <AdminLoginModal
-          onClose={() => setModalOpen(false)}
-          // onAuthenticate={handleAuthenticate}
-        />
-      )}
+      {isModalOpen && <AdminLoginModal onClose={() => setModalOpen(false)} />}
     </div>
   );
 }

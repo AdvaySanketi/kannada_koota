@@ -20,11 +20,47 @@ export default function ArticlesPage() {
   const [language, setLanguage] = useState("kn");
   const [highlight, setHighlight] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
+  const [articles, setArticles] = useState([]);
+  const [filteredArticles, setFilteredArticles] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
 
-  // Function to toggle between languages
-  const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === "en" ? "kn" : "en"));
-  };
+  useEffect(() => {
+    const fetchArticles = async () => {
+      try {
+        const response = await fetch("/api/articles");
+
+        const data = await response.json();
+        console.log(data);
+        if (response.status == 200) {
+          setArticles(data);
+          setFilteredArticles(data);
+        }
+      } catch (error) {
+        console.error("Failed to fetch articles:", error);
+      }
+    };
+
+    fetchArticles();
+  }, []);
+
+  useEffect(() => {
+    if (searchQuery !== "") {
+      const filteredArticles = articles.filter(
+        (article) =>
+          article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          (article.en_title &&
+            article.en_title
+              .toLowerCase()
+              .includes(searchQuery.toLowerCase())) ||
+          article.desc.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          (article.en_desc &&
+            article.en_desc.toLowerCase().includes(searchQuery.toLowerCase()))
+      );
+      setFilteredArticles(filteredArticles);
+    } else {
+      setFilteredArticles(articles);
+    }
+  }, [searchQuery, articles]);
 
   useEffect(() => {
     setHighlight(true);
@@ -36,45 +72,8 @@ export default function ArticlesPage() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Text content based on the selected language
-  const textContent = {
-    en: {
-      title: "Featured Articles",
-      article1: {
-        title: "A Journey Through Kannada Literature",
-        excerpt:
-          "Explore the rich tapestry of Kannada literature, from classical to modern works.",
-      },
-      article2: {
-        title: "The Soul of Karnataka: Stories from the Heart",
-        excerpt:
-          "Dive into captivating stories that reflect the essence of Karnataka's diverse culture.",
-      },
-      article3: {
-        title: "Poetry in Motion: Kannada Poems That Inspire",
-        excerpt:
-          "Discover the beauty of Kannada poetry through poems that touch the soul.",
-      },
-      readMore: "Read More",
-    },
-    kn: {
-      title: "ವಿಶೇಷ ಲೇಖನಗಳು",
-      article1: {
-        title: "ಕನ್ನಡ ಸಾಹಿತ್ಯದ ಯಾತ್ರೆ",
-        excerpt:
-          "ಕನ್ನಡ ಸಾಹಿತ್ಯದ ಶ್ರೀಮಂತ ಬೆಟ್ಟವನ್ನು, ಶ್ರೇಷ್ಠ ಶ್ರೇಣಿಯ ಆಧುನಿಕ ಶ್ರೇಣಿಯವರೆಗೆ ಅನ್ವೇಷಿಸಿ.",
-      },
-      article2: {
-        title: "ಕರ್ನಾಟಕದ ಆತ್ಮ: ಹೃದಯದಿಂದ ಕಥೆಗಳು",
-        excerpt:
-          "ಕರ್ನಾಟಕದ ವೈವಿಧ್ಯಮಯ ಸಂಸ್ಕೃತಿಯ ಸತ್ಯವನ್ನು ಪ್ರತಿಬಿಂಬಿಸುವ ಕಥೆಗಳಲ್ಲಿ ತಲುಪಿರಿ.",
-      },
-      article3: {
-        title: "ಕನ್ನಡ ಕವಿತೆ: ಹೃದಯವನ್ನು ಸ್ಪರ್ಶಿಸುವ ಕವಿತೆಗಳು",
-        excerpt: "ಕನ್ನಡ ಕವಿತೆ ಉದ್ಗಾರಗಳ ಮೂಲಕ ತಲುಪುವ ಸೌಂದರ್ಯವನ್ನು ಅನ್ವೇಷಿಸಿ.",
-      },
-      readMore: "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗೆ",
-    },
+  const toggleLanguage = () => {
+    setLanguage((prevLanguage) => (prevLanguage === "en" ? "kn" : "en"));
   };
 
   return (
@@ -181,6 +180,8 @@ export default function ArticlesPage() {
             type="search"
             placeholder="Search articles..."
             className="dark:bg-gray-800 dark:text-white"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
           />
         </div>
         <DropdownMenu className="bg-white">
@@ -207,305 +208,50 @@ export default function ArticlesPage() {
         </DropdownMenu>
       </div>
       <main className="px-32 mb-6 flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-6">
-        <Card className="overflow-hidden dark:bg-gray-800 rounded-lg shadow-md">
-          <CardContent className="p-0">
-            <img
-              src="/karnataka.jpg"
-              alt="Article Thumbnail"
-              width="300"
-              height="200"
-              className="w-full h-48 object-cover"
-              style={{ aspectRatio: "300/200", objectFit: "cover" }}
-            />
-          </CardContent>
-          <CardHeader className="p-4">
-            <div className="flex items-center justify-between mb-2">
-              <div className="text-sm font-medium text-muted-foreground">
-                Fiction
+        {filteredArticles.map((article, index) => (
+          <Card className="overflow-hidden dark:bg-gray-800 rounded-lg shadow-md">
+            <CardContent className="p-0">
+              <img
+                src="/karnataka.jpg"
+                alt="Article Thumbnail"
+                width="300"
+                height="200"
+                className="w-full h-48 object-cover"
+                style={{ aspectRatio: "300/200", objectFit: "cover" }}
+              />
+            </CardContent>
+            <CardHeader className="p-4">
+              <div className="flex items-center justify-between mb-2">
+                <div className="text-sm font-medium text-muted-foreground">
+                  {article.genre}
+                </div>
+                <div className="text-sm font-medium text-muted-foreground">
+                  {article.date}
+                </div>
               </div>
-              <div className="text-sm font-medium text-muted-foreground">
-                Aug 24, 2023
+              <h3 className="text-xl font-bold mb-2">
+                {language == "kn" ? article.title : article.en_title}
+              </h3>
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <span>{article.author}</span>
               </div>
-            </div>
-            <h3 className="text-xl font-bold mb-2">
-              The Enchanted Forest: A Whimsical Adventure
-            </h3>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Avatar className="w-6 h-6 border">
-                <AvatarImage src="/placeholder-user.jpg" alt="@shadcn" />
-                <AvatarFallback>AC</AvatarFallback>
-              </Avatar>
-              <span>John Doe</span>
-            </div>
-          </CardHeader>
-          <CardContent className="p-4">
-            <p className="text-muted-foreground line-clamp-3">
-              In a land where the trees whisper secrets and the flowers dance to
-              an ancient melody, a young adventurer stumbles upon a hidden path
-              that leads them deep into the enchanted forest. What wonders and
-              mysteries await them in this magical realm?
-            </p>
-          </CardContent>
-          <CardFooter className="p-4">
-            <Link
-              href="#"
-              className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-              prefetch={false}
-            >
-              Read More
-            </Link>
-          </CardFooter>
-        </Card>
-        <Card className="overflow-hidden dark:bg-gray-800 rounded-lg shadow-md">
-          <CardContent className="p-0">
-            <img
-              src="/karnataka.jpg"
-              alt="Article Thumbnail"
-              width="300"
-              height="200"
-              className="w-full h-48 object-cover"
-              style={{ aspectRatio: "300/200", objectFit: "cover" }}
-            />
-          </CardContent>
-          <CardHeader className="p-4">
-            <div className="flex items-center justify-between mb-2">
-              <div className="text-sm font-medium text-muted-foreground">
-                Poetry
-              </div>
-              <div className="text-sm font-medium text-muted-foreground">
-                Aug 22, 2023
-              </div>
-            </div>
-            <h3 className="text-xl font-bold mb-2">
-              Whispers of the Wind: A Poetic Journey
-            </h3>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Avatar className="w-6 h-6 border">
-                <AvatarImage src="/placeholder-user.jpg" alt="@shadcn" />
-                <AvatarFallback>AC</AvatarFallback>
-              </Avatar>
-              <span>Jane Smith</span>
-            </div>
-          </CardHeader>
-          <CardContent className="p-4">
-            <p className="text-muted-foreground line-clamp-3">
-              The wind whispers secrets, its breath caressing the soul. Words
-              dance across the page, weaving a tapestry of emotions. Join the
-              poet on a journey through the rhythmic landscapes of the mind,
-              where each line is a step towards a deeper understanding of the
-              world.
-            </p>
-          </CardContent>
-          <CardFooter className="p-4">
-            <Link
-              href="#"
-              className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-              prefetch={false}
-            >
-              Read More
-            </Link>
-          </CardFooter>
-        </Card>
-        <Card className="overflow-hidden dark:bg-gray-800 rounded-lg shadow-md">
-          <CardContent className="p-0">
-            <img
-              src="/karnataka.jpg"
-              alt="Article Thumbnail"
-              width="300"
-              height="200"
-              className="w-full h-48 object-cover"
-              style={{ aspectRatio: "300/200", objectFit: "cover" }}
-            />
-          </CardContent>
-          <CardHeader className="p-4">
-            <div className="flex items-center justify-between mb-2">
-              <div className="text-sm font-medium text-muted-foreground">
-                Personal Story
-              </div>
-              <div className="text-sm font-medium text-muted-foreground">
-                Aug 20, 2023
-              </div>
-            </div>
-            <h3 className="text-xl font-bold mb-2">
-              Overcoming the Odds: A Tale of Resilience
-            </h3>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Avatar className="w-6 h-6 border">
-                <AvatarImage src="/placeholder-user.jpg" alt="@shadcn" />
-                <AvatarFallback>AC</AvatarFallback>
-              </Avatar>
-              <span>Sarah Lee</span>
-            </div>
-          </CardHeader>
-          <CardContent className="p-4">
-            <p className="text-muted-foreground line-clamp-3">
-              In a world that often seems stacked against us, one individual's
-              story of triumph over adversity can be a beacon of hope. Join
-              Sarah as she shares her personal journey of overcoming seemingly
-              insurmountable challenges, and discover the power of resilience in
-              the face of life's greatest obstacles.
-            </p>
-          </CardContent>
-          <CardFooter className="p-4">
-            <Link
-              href="#"
-              className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-              prefetch={false}
-            >
-              Read More
-            </Link>
-          </CardFooter>
-        </Card>
-        <Card className="overflow-hidden dark:bg-gray-800 rounded-lg shadow-md">
-          <CardContent className="p-0">
-            <img
-              src="/karnataka.jpg"
-              alt="Article Thumbnail"
-              width="300"
-              height="200"
-              className="w-full h-48 object-cover"
-              style={{ aspectRatio: "300/200", objectFit: "cover" }}
-            />
-          </CardContent>
-          <CardHeader className="p-4">
-            <div className="flex items-center justify-between mb-2">
-              <div className="text-sm font-medium text-muted-foreground">
-                Blog
-              </div>
-              <div className="text-sm font-medium text-muted-foreground">
-                Aug 18, 2023
-              </div>
-            </div>
-            <h3 className="text-xl font-bold mb-2">
-              Unlocking the Power of Mindfulness: A Beginner's Guide
-            </h3>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Avatar className="w-6 h-6 border">
-                <AvatarImage src="/placeholder-user.jpg" alt="@shadcn" />
-                <AvatarFallback>AC</AvatarFallback>
-              </Avatar>
-              <span>Michael Johnson</span>
-            </div>
-          </CardHeader>
-          <CardContent className="p-4">
-            <p className="text-muted-foreground line-clamp-3">
-              In a world that often moves at a breakneck pace, the practice of
-              mindfulness can be a transformative tool for finding inner peace
-              and clarity. Join us as we explore the fundamentals of
-              mindfulness, and discover how this ancient practice can positively
-              impact your daily life.
-            </p>
-          </CardContent>
-          <CardFooter className="p-4">
-            <Link
-              href="#"
-              className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-              prefetch={false}
-            >
-              Read More
-            </Link>
-          </CardFooter>
-        </Card>
-        <Card className="overflow-hidden dark:bg-gray-800 rounded-lg shadow-md">
-          <CardContent className="p-0">
-            <img
-              src="/karnataka.jpg"
-              alt="Article Thumbnail"
-              width="300"
-              height="200"
-              className="w-full h-48 object-cover"
-              style={{ aspectRatio: "300/200", objectFit: "cover" }}
-            />
-          </CardContent>
-          <CardHeader className="p-4">
-            <div className="flex items-center justify-between mb-2">
-              <div className="text-sm font-medium text-muted-foreground">
-                Fiction
-              </div>
-              <div className="text-sm font-medium text-muted-foreground">
-                Aug 16, 2023
-              </div>
-            </div>
-            <h3 className="text-xl font-bold mb-2">
-              The Celestial Waltz: A Cosmic Love Story
-            </h3>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Avatar className="w-6 h-6 border">
-                <AvatarImage src="/placeholder-user.jpg" alt="@shadcn" />
-                <AvatarFallback>AC</AvatarFallback>
-              </Avatar>
-              <span>Emily Chen</span>
-            </div>
-          </CardHeader>
-          <CardContent className="p-4">
-            <p className="text-muted-foreground line-clamp-3">
-              In the vast expanse of the universe, two souls find themselves
-              drawn together by the celestial dance of the stars. As they
-              navigate the cosmic currents, they discover that their love
-              transcends the boundaries of time and space, weaving a tapestry of
-              wonder and enchantment.
-            </p>
-          </CardContent>
-          <CardFooter className="p-4">
-            <Link
-              href="#"
-              className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-              prefetch={false}
-            >
-              Read More
-            </Link>
-          </CardFooter>
-        </Card>
-        <Card className="overflow-hidden dark:bg-gray-800 rounded-lg shadow-md">
-          <CardContent className="p-0">
-            <img
-              src="/karnataka.jpg"
-              alt="Article Thumbnail"
-              width="300"
-              height="200"
-              className="w-full h-48 object-cover"
-              style={{ aspectRatio: "300/200", objectFit: "cover" }}
-            />
-          </CardContent>
-          <CardHeader className="p-4">
-            <div className="flex items-center justify-between mb-2">
-              <div className="text-sm font-medium text-muted-foreground">
-                Poetry
-              </div>
-              <div className="text-sm font-medium text-muted-foreground">
-                Aug 14, 2023
-              </div>
-            </div>
-            <h3 className="text-xl font-bold mb-2">
-              Echoes of the Heart: A Collection of Poems
-            </h3>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Avatar className="w-6 h-6 border">
-                <AvatarImage src="/placeholder-user.jpg" alt="@shadcn" />
-                <AvatarFallback>AC</AvatarFallback>
-              </Avatar>
-              <span>Sophia Liang</span>
-            </div>
-          </CardHeader>
-          <CardContent className="p-4">
-            <p className="text-muted-foreground line-clamp-3">
-              In this collection of poems, the author invites you to explore the
-              depths of the human experience, from the joys of love to the
-              sorrows of loss. Each verse is a window into the soul, capturing
-              the essence of what it means to be alive in this extraordinary
-              world.
-            </p>
-          </CardContent>
-          <CardFooter className="p-4">
-            <Link
-              href="#"
-              className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-              prefetch={false}
-            >
-              Read More
-            </Link>
-          </CardFooter>
-        </Card>
+            </CardHeader>
+            <CardContent className="p-4">
+              <p className="text-muted-foreground line-clamp-3">
+                {language == "kn" ? article.desc : article.en_desc}
+              </p>
+            </CardContent>
+            <CardFooter className="p-4">
+              <Link
+                href="#"
+                className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                prefetch={false}
+              >
+                Read More
+              </Link>
+            </CardFooter>
+          </Card>
+        ))}
       </main>
       <footer className="bg-gray-200 dark:bg-gray-800 px-6 py-8">
         <div className="text-center text-sm text-gray-700 dark:text-gray-400">
@@ -524,12 +270,7 @@ export default function ArticlesPage() {
           </p>
         </div>
       </footer>
-      {isModalOpen && (
-        <AdminLoginModal
-          onClose={() => setModalOpen(false)}
-          // onAuthenticate={handleAuthenticate}
-        />
-      )}
+      {isModalOpen && <AdminLoginModal onClose={() => setModalOpen(false)} />}
     </div>
   );
 }

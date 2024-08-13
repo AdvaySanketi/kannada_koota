@@ -17,7 +17,25 @@ export default function HomePage() {
   const [language, setLanguage] = useState("kn");
   const [highlight, setHighlight] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
-  const [isAuthenticated, setAuthenticated] = useState(false);
+  const [announcements, setAnnouncements] = useState([]);
+
+  useEffect(() => {
+    const fetchAnnouncements = async () => {
+      try {
+        const response = await fetch("/api/announcements");
+
+        const data = await response.json();
+        console.log(data);
+        if (response.status == 200) {
+          setAnnouncements(data);
+        }
+      } catch (error) {
+        console.error("Failed to fetch announcements:", error);
+      }
+    };
+
+    fetchAnnouncements();
+  }, []);
 
   // Function to toggle between languages
   const toggleLanguage = () => {
@@ -34,36 +52,16 @@ export default function HomePage() {
     return () => clearTimeout(timer);
   }, []);
 
-  const handleAuthenticate = () => {
-    setAuthenticated(true);
-  };
-
-  // Text content based on the selected language
   const textContent = {
     en: {
       welcome: "Welcome to Kannada Koota!",
       description:
         "Kannada Koota is a unique club celebrating the essence of Karnataka's culture and language. We organize creative events focusing on arts, literature, and technology. Join us to strengthen our community and reach out to this invaluable heritage of Karnataka.",
-      upcomingEvent: "Upcoming Event",
-      workshopDetails: "Join us for a Kannada language workshop on June 15th.",
-      specialArticle: "Special Article",
-      articleDetails:
-        "Read our latest article on the history of Kannada literature.",
-      announcements: "Announcements",
-      announcementsDetails: "Check out our latest announcements and updates.",
     },
     kn: {
       welcome: "ನಮಸ್ಕಾರ! ಕನ್ನಡ ಕೂಟಕ್ಕೆ ಸ್ವಾಗತ",
       description:
         "ಕನ್ನಡ ಕೂಟ, ಕರ್ನಾಟಕದ ಸಂಸ್ಕೃತಿಯ ಸೊಗಡನ್ನು ಮತ್ತು ಭಾಷೆಯನ್ನು celebrate ಮಾಡುವ ಒಂದು ವೈಶಿಷ್ಟ್ಯಪೂರ್ಣ ಕ್ಲಬ್. ನಾವೆಲ್ಲರ ನಡುವೆ ಕಲೆ, ಸಾಹಿತ್ಯ, ಮತ್ತು ತಂತ್ರಜ್ಞಾನದ ವಿಷಯದಲ್ಲಿ ಕ್ರಿಯಾತ್ಮಕ ಕಾರ್ಯಕ್ರಮಗಳನ್ನು ಆಯೋಜಿಸುತ್ತೇವೆ. ನಮ್ಮ ಸಮುದಾಯವನ್ನು ಬಲಪಡಿಸಲು ಮತ್ತು ಕರ್ನಾಟಕದ ಈ ಅಮೂಲ್ಯವಾದ ಪರಂಪರೆಯನ್ನು ತಲುಪಿಸಲು ನಮ್ಮೊಂದಿಗೆ ಸೇರಿ.",
-      upcomingEvent: "ಉಪcoming ಇವೆಂಟ್",
-      workshopDetails: "ಜೂನ್ 15ರಂದು ಕನ್ನಡ ಭಾಷಾ ಕಾರ್ಯಾಗಾರದಲ್ಲಿ ನಮ್ಮೊಂದಿಗೆ ಸೇರಿ.",
-      specialArticle: "ವಿಶೇಷ ಲೇಖನ",
-      articleDetails:
-        "ಕನ್ನಡ ಸಾಹಿತ್ಯದ ಇತಿಹಾಸದ ಕುರಿತು ನಮ್ಮ ಇತ್ತೀಚಿನ ಲೇಖನವನ್ನು ಓದಿ.",
-      announcements: "ಅಲ್ಲನ್ಸ್ಮೆಂಟ್‌ಗಳು",
-      announcementsDetails:
-        "ನಮ್ಮ ಇತ್ತೀಚಿನ ಪ್ರಕಟಣೆಗಳು ಮತ್ತು ಅಪ್ಡೇಟ್‌ಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.",
     },
   };
 
@@ -187,72 +185,34 @@ export default function HomePage() {
             className="w-full max-w-5xl mx-auto"
           >
             <CarouselContent>
-              <CarouselItem>
-                <div className="relative p-4 bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
-                  <img
-                    src="/karnataka.jpg"
-                    alt={textContent[language].upcomingEvent}
-                    className="w-full h-80 rounded-lg"
-                  />
-                  <div className="mt-4">
-                    <h3 className="text-3xl font-bold">
-                      {textContent[language].upcomingEvent}
-                    </h3>
-                    <p className="text-lg text-gray-800 dark:text-gray-100">
-                      {textContent[language].workshopDetails}
-                    </p>
-                    <Button size="sm" className="mt-4">
-                      {language === "en" ? "More Info" : "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗೆ"}
-                    </Button>
+              {announcements.map((ann, index) => (
+                <CarouselItem key={index}>
+                  <div className="relative p-4 bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
+                    <img
+                      src="/karnataka.jpg"
+                      alt={ann.title}
+                      className="w-full h-80 rounded-lg"
+                    />
+                    <div className="mt-4">
+                      <h3 className="text-3xl font-bold">
+                        {language == "kn" ? ann.title : ann.en_title}
+                      </h3>
+                      <p className="text-lg text-gray-800 dark:text-gray-100">
+                        {language == "kn" ? ann.desc : ann.en_desc}
+                      </p>
+                      <Button size="sm" className="mt-4">
+                        {language === "en" ? "More Info" : "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗೆ"}
+                      </Button>
+                    </div>
                   </div>
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="relative p-4 bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
-                  <img
-                    src="/karnataka.jpg"
-                    alt={textContent[language].specialArticle}
-                    className="w-full h-80 rounded-lg"
-                  />
-                  <div className="mt-4">
-                    <h3 className="text-3xl font-bold">
-                      {textContent[language].specialArticle}
-                    </h3>
-                    <p className="text-lg text-gray-800 dark:text-gray-100">
-                      {textContent[language].articleDetails}
-                    </p>
-                    <Button size="sm" className="mt-4">
-                      {language === "en" ? "Read Now" : "ಈಗ ಓದಿ"}
-                    </Button>
-                  </div>
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="relative p-4 bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
-                  <img
-                    src="/karnataka.jpg"
-                    alt={textContent[language].announcements}
-                    className="w-full h-80 rounded-lg"
-                  />
-                  <div className="mt-4">
-                    <h3 className="text-3xl font-bold">
-                      {textContent[language].announcements}
-                    </h3>
-                    <p className="text-lg text-gray-800 dark:text-gray-100">
-                      {textContent[language].announcementsDetails}
-                    </p>
-                    <Button size="sm" className="mt-4">
-                      {language === "en" ? "See All" : "ಎಲ್ಲಾ ವೀಕ್ಷಿಸಿ"}
-                    </Button>
-                  </div>
-                </div>
-              </CarouselItem>
+                </CarouselItem>
+              ))}
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
         </section>
-        <section className=" py-12 md:py-20">
+        {/* <section className=" py-12 md:py-20">
           <div className="container mx-auto px-8">
             <h2 className="text-2xl font-bold mb-8">Featured Articles</h2>
             <div className="grid grid-cols-3 gap-8">
@@ -336,7 +296,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
       <footer className="bg-gray-200 dark:bg-gray-800 px-6 py-8">
         <div className="text-center text-sm text-gray-700 dark:text-gray-400">
@@ -355,12 +315,7 @@ export default function HomePage() {
           </p>
         </div>
       </footer>
-      {isModalOpen && (
-        <AdminLoginModal
-          onClose={() => setModalOpen(false)}
-          onAuthenticate={handleAuthenticate}
-        />
-      )}
+      {isModalOpen && <AdminLoginModal onClose={() => setModalOpen(false)} />}
     </div>
   );
 }

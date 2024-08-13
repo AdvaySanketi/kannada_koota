@@ -23,6 +23,7 @@ export default function Document() {
             }
           `}
         </style>
+        <title>Kannada Koota ECC</title>
       </Head>
       <body className="overflow-auto">
         <Main />
