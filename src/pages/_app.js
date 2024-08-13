@@ -4,7 +4,6 @@ import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    console.log("tracking visit");
     // Track visit on page load
     fetch("/api/track-visit", { method: "POST" });
   }, []);
