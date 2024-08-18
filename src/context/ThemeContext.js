@@ -24,7 +24,6 @@ export function ThemeProvider({ children }) {
   }, [theme]);
 
   const toggleTheme = () => {
-    console.log(theme);
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
 
@@ -36,6 +35,5 @@ export function ThemeProvider({ children }) {
 }
 
 export function useTheme() {
-  console.log("here");
   return useContext(ThemeContext);
 }

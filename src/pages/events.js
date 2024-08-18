@@ -3,6 +3,7 @@ import { useTheme } from "@/context/ThemeContext";
 import Link from "next/link";
 import { Button } from "@/components/button";
 import { AdminLoginModal } from "@/components/adminLoginModal";
+import { SyncLoader } from "react-spinners";
 
 export default function EventsPage() {
   const { theme, toggleTheme } = useTheme();
@@ -11,35 +12,39 @@ export default function EventsPage() {
   const [isModalOpen, setModalOpen] = useState(false);
   const [events, setEvents] = useState([]);
   const [pastEvents, setPastEvents] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [pastloading, setPastLoading] = useState(true);
 
   useEffect(() => {
-    const fetchEvents = async () => {
+    const fetchPastEvents = async () => {
       try {
         const response = await fetch("/api/past_events");
-
         const data = await response.json();
-        console.log(data);
-        if (response.status == 200) {
+        if (response.status === 200) {
           setPastEvents(data);
         }
       } catch (error) {
         console.error("Failed to fetch past events:", error);
+      } finally {
+        setPastLoading(false);
       }
     };
 
-    fetchEvents();
+    fetchPastEvents();
   }, []);
 
   useEffect(() => {
     const fetchEvents = async () => {
       try {
         const response = await fetch("/api/events");
-
         const data = await response.json();
-        console.log(data);
-        setEvents(data);
+        if (response.status === 200) {
+          setEvents(data);
+        }
       } catch (error) {
         console.error("Failed to fetch upcoming events:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -120,6 +125,13 @@ export default function EventsPage() {
             {language === "en" ? "About Us" : "ನಮ್ಮ ಬಗ್ಗೆ"}
           </Link>
           <Link
+            href="meet-the-team"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
+            {language === "en" ? "Our Team" : "ನಮ್ಮ ತಂಡ"}
+          </Link>
+          <Link
             href="events"
             className="text-sm font-medium hover:underline underline-offset-4"
             prefetch={false}
@@ -132,13 +144,6 @@ export default function EventsPage() {
             prefetch={false}
           >
             {language === "en" ? "Articles" : "ಲೇಖನಗಳು"}
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            {language === "en" ? "Contact" : "ಸಂಪರ್ಕ"}
           </Link>
         </nav>
         <div className="flex items-center gap-4">
@@ -186,7 +191,11 @@ export default function EventsPage() {
             {textContent[language].eventDetails}
           </p>
           <div className="container mx-auto px-8">
-            {events.length > 0 ? (
+            {loading ? (
+              <div className="flex items-center justify-center h-32">
+                <SyncLoader size={20} color="#3c3c3c" />
+              </div>
+            ) : events.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {events.map((eve, index) => (
                   <div
@@ -233,34 +242,49 @@ export default function EventsPage() {
             {textContent[language].pastEvents}
           </h1>
           <div className="container mx-auto px-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {pastEvents.map((eve, index) => (
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-                  <img
-                    src="/karnataka.jpg"
-                    width={400}
-                    height={225}
-                    alt={eve.title}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">
-                      {language == "kn" ? eve.title : eve.en_title}
-                    </h3>
-                    <p className="text-gray-700 dark:text-gray-400 mb-4">
-                      {language == "kn" ? eve.desc : eve.en_desc}
-                    </p>
-                    <Link
-                      href="#"
-                      className="text-primary hover:underline"
-                      prefetch={false}
-                    >
-                      {language === "en" ? "Learn More" : "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ"}
-                    </Link>
+            {loading ? (
+              <div className="flex items-center justify-center h-32">
+                <SyncLoader size={20} color="#3c3c3c" />
+              </div>
+            ) : pastEvents.length > 0 ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {pastEvents.map((eve, index) => (
+                  <div
+                    key={index}
+                    className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+                  >
+                    <img
+                      src="/karnataka.jpg"
+                      width={400}
+                      height={225}
+                      alt={eve.title}
+                      className="w-full h-48 object-cover"
+                    />
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold mb-2">
+                        {language === "kn" ? eve.title : eve.en_title}
+                      </h3>
+                      <p className="text-gray-700 dark:text-gray-400 mb-4">
+                        {language === "kn" ? eve.desc : eve.en_desc}
+                      </p>
+                      <Link
+                        href="#"
+                        className="text-primary hover:underline"
+                        prefetch={false}
+                      >
+                        {language === "en"
+                          ? "Learn More"
+                          : "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ"}
+                      </Link>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            ) : (
+              <p className="text-lg text-gray-700 dark:text-gray-400">
+                {textContent[language].noUpcomingEvents}
+              </p>
+            )}
           </div>
         </section>
       </main>

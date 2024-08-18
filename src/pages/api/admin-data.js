@@ -16,6 +16,7 @@ export default async function handler(req, res) {
       const memberCount = await collections.members.countDocuments();
       const eventCount = await collections.events.countDocuments();
       const articleCount = await collections.articles.countDocuments();
+      const TotalVisitsCount = await collections.visits.countDocuments();
       const uniqueVisitorCount = await collections.visits
         .distinct("visitorId")
         .then((visitorIds) => visitorIds.length);
@@ -25,6 +26,7 @@ export default async function handler(req, res) {
         ecount: eventCount,
         acount: articleCount,
         vcount: uniqueVisitorCount,
+        tcount: TotalVisitsCount,
       });
     } catch (error) {
       console.error("Error:", error);

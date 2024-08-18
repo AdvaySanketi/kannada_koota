@@ -14,6 +14,7 @@ import {
 import { Card, CardContent, CardHeader, CardFooter } from "@/components/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/avatar";
 import { SearchBar } from "@/components/search_bar";
+import { SyncLoader } from "react-spinners";
 
 export default function ArticlesPage() {
   const { theme, toggleTheme } = useTheme();
@@ -23,6 +24,7 @@ export default function ArticlesPage() {
   const [articles, setArticles] = useState([]);
   const [filteredArticles, setFilteredArticles] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
+  const [loading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchArticles = async () => {
@@ -30,7 +32,6 @@ export default function ArticlesPage() {
         const response = await fetch("/api/articles");
 
         const data = await response.json();
-        console.log(data);
         if (response.status == 200) {
           setArticles(data);
           setFilteredArticles(data);
@@ -41,6 +42,7 @@ export default function ArticlesPage() {
     };
 
     fetchArticles();
+    setIsLoading(false);
   }, []);
 
   useEffect(() => {
@@ -75,6 +77,14 @@ export default function ArticlesPage() {
   const toggleLanguage = () => {
     setLanguage((prevLanguage) => (prevLanguage === "en" ? "kn" : "en"));
   };
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <SyncLoader size={20} color="#3c3c3c" />
+      </div>
+    );
+  }
 
   return (
     <div
@@ -117,6 +127,13 @@ export default function ArticlesPage() {
             {language === "en" ? "About Us" : "ನಮ್ಮ ಬಗ್ಗೆ"}
           </Link>
           <Link
+            href="meet-the-team"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
+            {language === "en" ? "Our Team" : "ನಮ್ಮ ತಂಡ"}
+          </Link>
+          <Link
             href="events"
             className="text-sm font-medium hover:underline underline-offset-4"
             prefetch={false}
@@ -129,13 +146,6 @@ export default function ArticlesPage() {
             prefetch={false}
           >
             {language === "en" ? "Articles" : "ಲೇಖನಗಳು"}
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            {language === "en" ? "Contact" : "ಸಂಪರ್ಕ"}
           </Link>
         </nav>
         <div className="flex items-center gap-4">

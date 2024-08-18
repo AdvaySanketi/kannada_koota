@@ -3,6 +3,7 @@ import { useTheme } from "@/context/ThemeContext";
 import Link from "next/link";
 import { Button } from "@/components/button";
 import { AdminLoginModal } from "@/components/adminLoginModal";
+import { SyncLoader } from "react-spinners";
 
 const seeds = [
   "cali",
@@ -33,6 +34,7 @@ export default function AboutUsPage() {
   const [highlight, setHighlight] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
   const [members, setMembers] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchMembers = async () => {
@@ -49,6 +51,7 @@ export default function AboutUsPage() {
     };
 
     fetchMembers();
+    setLoading(false);
   }, []);
 
   // Function to toggle between languages
@@ -77,6 +80,42 @@ export default function AboutUsPage() {
       member: "ಸದಸ್ಯ",
     },
   };
+
+  const getMembersByDomain = () => {
+    const sortedMembers = members.reduce(
+      (acc, member) => {
+        if (member.isHead) {
+          acc.heads.push(member);
+        } else {
+          if (!acc.domains[member.domain]) {
+            acc.domains[member.domain] = [];
+          }
+          acc.domains[member.domain].push(member);
+        }
+        return acc;
+      },
+      { heads: [], domains: {} }
+    );
+
+    // Add heads to their respective domain groups
+    sortedMembers.heads.forEach((head) => {
+      if (sortedMembers.domains[head.domain]) {
+        sortedMembers.domains[head.domain].unshift(head);
+      }
+    });
+
+    return sortedMembers;
+  };
+
+  const groupedMembers = getMembersByDomain();
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <SyncLoader size={20} color="#3c3c3c" />
+      </div>
+    );
+  }
 
   return (
     <div
@@ -179,12 +218,79 @@ export default function AboutUsPage() {
 
       <main className="flex-1 px-6 py-12">
         <section className="max-w-4xl mx-auto space-y-6">
-          <h1 className="text-4xl font-bold mb-4">
-            {textContent[language].aboutUs}
-          </h1>
-          <p className="text-lg text-gray-700 dark:text-gray-400 mb-8">
-            {textContent[language].mission}
-          </p>
+          <h2 className="text-3xl font-bold mb-6">
+            {textContent[language].teamTitle}
+          </h2>
+
+          {/* Display heads first */}
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">Core</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {groupedMembers.heads.map((member, index) => (
+                  <div
+                    key={index}
+                    className="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 border-4 border-blue-500 bg-blue-50"
+                  >
+                    <img
+                      src={
+                        member.name == "Advay Sanketi"
+                          ? "face.png"
+                          : `https://api.dicebear.com/9.x/notionists/svg?seed=${
+                              seeds[index % 20]
+                            }`
+                      }
+                      alt={member.name}
+                      className="w-full h-40 object-cover rounded-lg mb-4"
+                    />
+                    <h3 className="text-xl font-semibold mb-2 text-blue-700 dark:text-blue-400">
+                      {language === "en" ? member.name : member.kannada_name}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      {member.domain}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Display members grouped by domains */}
+            {Object.keys(groupedMembers.domains).map((domain, index) => (
+              <div key={index}>
+                <h3 className="text-2xl font-semibold mb-4">{domain}</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {groupedMembers.domains[domain].map((member, index) => (
+                    <div
+                      key={index}
+                      className={`${
+                        member.isHead
+                          ? "bg-gray-100 dark:bg-gray-800 border-4 border-blue-500 bg-blue-50"
+                          : "bg-gray-100 dark:bg-gray-800"
+                      } rounded-lg p-6`}
+                    >
+                      <img
+                        src={
+                          member.name == "Advay Sanketi"
+                            ? "face.png"
+                            : `https://api.dicebear.com/9.x/notionists/svg?seed=${
+                                seeds[index % 20]
+                              }`
+                        }
+                        alt={member.name}
+                        className="w-full h-40 object-cover rounded-lg mb-4"
+                      />
+                      <h3 className="text-xl font-semibold mb-2 text-gray-700 dark:text-white">
+                        {language === "en" ? member.name : member.kannada_name}
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-400">
+                        {member.domain}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </section>
       </main>
 

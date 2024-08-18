@@ -7,7 +7,6 @@ export default async function handler(req, res) {
     const collection = db.collection("members");
 
     const members = await collection.find({}).toArray();
-    console.log(members);
     res.status(200).json(members);
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch members" });

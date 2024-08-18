@@ -11,6 +11,7 @@ import {
 } from "@/components/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { AdminLoginModal } from "@/components/adminLoginModal";
+import { SyncLoader } from "react-spinners";
 
 export default function HomePage() {
   const { theme, toggleTheme } = useTheme();
@@ -18,6 +19,7 @@ export default function HomePage() {
   const [highlight, setHighlight] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
   const [announcements, setAnnouncements] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchAnnouncements = async () => {
@@ -25,12 +27,13 @@ export default function HomePage() {
         const response = await fetch("/api/announcements");
 
         const data = await response.json();
-        console.log(data);
         if (response.status == 200) {
           setAnnouncements(data);
         }
       } catch (error) {
         console.error("Failed to fetch announcements:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -104,6 +107,13 @@ export default function HomePage() {
             {language === "en" ? "About Us" : "ನಮ್ಮ ಬಗ್ಗೆ"}
           </Link>
           <Link
+            href="meet-the-team"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
+            {language === "en" ? "Our Team" : "ನಮ್ಮ ತಂಡ"}
+          </Link>
+          <Link
             href="events"
             className="text-sm font-medium hover:underline underline-offset-4"
             prefetch={false}
@@ -116,13 +126,6 @@ export default function HomePage() {
             prefetch={false}
           >
             {language === "en" ? "Articles" : "ಲೇಖನಗಳು"}
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            {language === "en" ? "Contact" : "ಸಂಪರ್ಕ"}
           </Link>
         </nav>
         <div className="flex items-center gap-4">
@@ -172,131 +175,52 @@ export default function HomePage() {
         </section>
 
         <section className="mt-12">
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            plugins={[
-              Autoplay({
-                delay: 2000,
-              }),
-            ]}
-            className="w-full max-w-5xl mx-auto"
-          >
-            <CarouselContent>
-              {announcements.map((ann, index) => (
-                <CarouselItem key={index}>
-                  <div className="relative p-4 bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
-                    <img
-                      src="/karnataka.jpg"
-                      alt={ann.title}
-                      className="w-full h-80 rounded-lg"
-                    />
-                    <div className="mt-4">
-                      <h3 className="text-3xl font-bold">
-                        {language == "kn" ? ann.title : ann.en_title}
-                      </h3>
-                      <p className="text-lg text-gray-800 dark:text-gray-100">
-                        {language == "kn" ? ann.desc : ann.en_desc}
-                      </p>
-                      <Button size="sm" className="mt-4">
-                        {language === "en" ? "More Info" : "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗೆ"}
-                      </Button>
-                    </div>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        </section>
-        {/* <section className=" py-12 md:py-20">
-          <div className="container mx-auto px-8">
-            <h2 className="text-2xl font-bold mb-8">Featured Articles</h2>
-            <div className="grid grid-cols-3 gap-8">
-              <div className="bg-gray-200 dark:bg-gray-800 rounded-lg overflow-hidden">
-                <img
-                  src="/karnataka.jpg"
-                  width={400}
-                  height={225}
-                  alt="Article Image 1"
-                  className="w-full h-48 object-cover"
-                  style={{ aspectRatio: "400/225", objectFit: "cover" }}
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">
-                    Exploring the Rich Linguistic Diversity of Karnataka
-                  </h3>
-                  <p className="text-gray-700 dark:text-muted-foreground  mb-4">
-                    Dive into the fascinating world of Kannada and its influence
-                    on the cultural tapestry of Karnataka.
-                  </p>
-                  <Link
-                    href="#"
-                    className="text-primary hover:underline"
-                    prefetch={false}
-                  >
-                    Read More
-                  </Link>
-                </div>
-              </div>
-              <div className="bg-gray-200 dark:bg-gray-800 rounded-lg overflow-hidden">
-                <img
-                  src="/karnataka.jpg"
-                  width={400}
-                  height={225}
-                  alt="Article Image 2"
-                  className="w-full h-48 object-cover"
-                  style={{ aspectRatio: "400/225", objectFit: "cover" }}
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">
-                    The Rise of Kannada Tech Startups in Bengaluru
-                  </h3>
-                  <p className="text-gray-700 dark:text-muted-foreground  mb-4">
-                    Discover how Kannada-speaking entrepreneurs are shaping the
-                    tech landscape in Bengaluru.
-                  </p>
-                  <Link
-                    href="#"
-                    className="text-primary hover:underline"
-                    prefetch={false}
-                  >
-                    Read More
-                  </Link>
-                </div>
-              </div>
-              <div className="bg-gray-200 dark:bg-gray-800 rounded-lg overflow-hidden">
-                <img
-                  src="/karnataka.jpg"
-                  width={400}
-                  height={225}
-                  alt="Article Image 3"
-                  className="w-full h-48 object-cover"
-                  style={{ aspectRatio: "400/225", objectFit: "cover" }}
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">
-                    The Influence of Kannada Cinema on Indian Pop Culture
-                  </h3>
-                  <p className="text-gray-700 dark:text-muted-foreground mb-4">
-                    Explore the impact of Kannada cinema on the broader Indian
-                    entertainment industry.
-                  </p>
-                  <Link
-                    href="#"
-                    className="text-primary hover:underline"
-                    prefetch={false}
-                  >
-                    Read More
-                  </Link>
-                </div>
-              </div>
+          {loading ? (
+            <div className="flex items-center justify-center">
+              <SyncLoader size={20} color="#3c3c3c" />
             </div>
-          </div>
-        </section> */}
+          ) : (
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 2000,
+                }),
+              ]}
+              className="w-full max-w-5xl mx-auto"
+            >
+              <CarouselContent>
+                {announcements.map((ann, index) => (
+                  <CarouselItem key={index}>
+                    <div className="relative p-4 bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
+                      <img
+                        src="/karnataka.jpg"
+                        alt={ann.title}
+                        className="w-full h-80 rounded-lg"
+                      />
+                      <div className="mt-4">
+                        <h3 className="text-3xl font-bold">
+                          {language == "kn" ? ann.title : ann.en_title}
+                        </h3>
+                        <p className="text-lg text-gray-800 dark:text-gray-100">
+                          {language == "kn" ? ann.desc : ann.en_desc}
+                        </p>
+                        <Button size="sm" className="mt-4">
+                          {language === "en" ? "More Info" : "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗೆ"}
+                        </Button>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          )}
+        </section>
       </main>
       <footer className="bg-gray-200 dark:bg-gray-800 px-6 py-8">
         <div className="text-center text-sm text-gray-700 dark:text-gray-400">
@@ -306,16 +230,20 @@ export default function HomePage() {
               ? "For inquiries or more information, please contact us at"
               : "ಸಂಪರ್ಕವಿಲ್ಲದೇ ಅಥವಾ ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗೆ, ದಯವಿಟ್ಟು ಸಂಪರ್ಕಿಸಿ"}{" "}
             <a
-              href="mailto:info@kannadakoota.org"
-              className="text-gray-900 dark:text-white hover:underline"
+              href="mailto:info@kannadakoota.com"
+              className="underline hover:text-gray-900 dark:hover:text-white"
             >
-              info@kannadakoota.org
+              info@kannadakoota.com
             </a>
-            .
           </p>
         </div>
       </footer>
-      {isModalOpen && <AdminLoginModal onClose={() => setModalOpen(false)} />}
+      {isModalOpen && (
+        <AdminLoginModal
+          isOpen={isModalOpen}
+          onClose={() => setModalOpen(false)}
+        />
+      )}
     </div>
   );
 }

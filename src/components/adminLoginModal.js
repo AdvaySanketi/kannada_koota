@@ -21,6 +21,7 @@ export const AdminLoginModal = ({ onClose }) => {
       const response = await axios.post("/api/admin", { username, password });
       if (response.status == 200) {
         const loginTime = new Date().getTime();
+        localStorage.setItem("admin", username);
         localStorage.setItem("loggedIn", "true");
         localStorage.setItem("loginTime", loginTime);
         router.push("/dashboard");

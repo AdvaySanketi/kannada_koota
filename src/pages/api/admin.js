@@ -20,8 +20,6 @@ export default async function handler(req, res) {
         password: password,
       });
 
-      console.log(admin);
-
       if (admin) {
         res.status(200).json({ message: "Authenticated successfully" });
       } else {
