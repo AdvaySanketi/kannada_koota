@@ -4,6 +4,12 @@ import Link from "next/link";
 import { Button } from "@/components/button";
 import { AdminLoginModal } from "@/components/adminLoginModal";
 import { SyncLoader } from "react-spinners";
+import {
+  Collapsible,
+  CollapsibleTrigger,
+  CollapsibleContent,
+} from "@/components/collapsible";
+import { useLanguage } from "@/context/LanguageContext";
 
 const seeds = [
   "cali",
@@ -30,7 +36,7 @@ const seeds = [
 
 export default function AboutUsPage() {
   const { theme, toggleTheme } = useTheme();
-  const [language, setLanguage] = useState("kn");
+  const { language, toggleLanguage } = useLanguage();
   const [highlight, setHighlight] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
   const [members, setMembers] = useState([]);
@@ -53,11 +59,6 @@ export default function AboutUsPage() {
     fetchMembers();
     setLoading(false);
   }, []);
-
-  // Function to toggle between languages
-  const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === "en" ? "kn" : "en"));
-  };
 
   // Text content based on the selected language
   const textContent = {
@@ -256,39 +257,12 @@ export default function AboutUsPage() {
 
             {/* Display members grouped by domains */}
             {Object.keys(groupedMembers.domains).map((domain, index) => (
-              <div key={index}>
-                <h3 className="text-2xl font-semibold mb-4">{domain}</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {groupedMembers.domains[domain].map((member, index) => (
-                    <div
-                      key={index}
-                      className={`${
-                        member.isHead
-                          ? "bg-gray-100 dark:bg-gray-800 border-4 border-blue-500 bg-blue-50"
-                          : "bg-gray-100 dark:bg-gray-800"
-                      } rounded-lg p-6`}
-                    >
-                      <img
-                        src={
-                          member.name == "Advay Sanketi"
-                            ? "face.png"
-                            : `https://api.dicebear.com/9.x/notionists/svg?seed=${
-                                seeds[index % 20]
-                              }`
-                        }
-                        alt={member.name}
-                        className="w-full h-40 object-cover rounded-lg mb-4"
-                      />
-                      <h3 className="text-xl font-semibold mb-2 text-gray-700 dark:text-white">
-                        {language === "en" ? member.name : member.kannada_name}
-                      </h3>
-                      <p className="text-gray-600 dark:text-gray-400">
-                        {member.domain}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <BuildDomainCard
+                groupedMembers={groupedMembers}
+                domain={domain}
+                index={index}
+                language={language}
+              />
             ))}
           </div>
         </section>
@@ -316,6 +290,61 @@ export default function AboutUsPage() {
   );
 }
 
+function BuildDomainCard({ groupedMembers, domain, index, language }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = () => {
+    setIsOpen((prev) => !prev);
+  };
+
+  return (
+    <div key={index}>
+      <Collapsible open={isOpen} onOpenChange={toggleOpen}>
+        <CollapsibleTrigger className="flex items-center gap-2 cursor-pointer">
+          <ChevronIcon
+            className={`w-7 h-7 text-black dark:text-white transform transition-transform ${
+              isOpen ? "rotate-180" : ""
+            }`}
+          />
+          <h3 className="text-2xl font-semibold">{domain}</h3>
+        </CollapsibleTrigger>
+        <CollapsibleContent className="pt-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {groupedMembers.domains[domain].map((member, index) => (
+              <div
+                key={index}
+                className={`${
+                  member.isHead
+                    ? "bg-gray-100 dark:bg-gray-800 border-4 border-blue-500 bg-blue-50"
+                    : "bg-gray-100 dark:bg-gray-800"
+                } rounded-lg p-6`}
+              >
+                <img
+                  src={
+                    member.name == "Advay Sanketi"
+                      ? "face.png"
+                      : `https://api.dicebear.com/9.x/notionists/svg?seed=${
+                          seeds[index % 20]
+                        }`
+                  }
+                  alt={member.name}
+                  className="w-full h-40 object-cover rounded-lg mb-4"
+                />
+                <h3 className="text-xl font-semibold mb-2 text-gray-700 dark:text-white">
+                  {language === "en" ? member.name : member.kannada_name}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  {member.domain}
+                </p>
+              </div>
+            ))}
+          </div>
+        </CollapsibleContent>
+      </Collapsible>
+    </div>
+  );
+}
+
 function UserIcon(props) {
   return (
     <svg
@@ -332,6 +361,25 @@ function UserIcon(props) {
     >
       <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
       <circle cx="12" cy="7" r="4" />
+    </svg>
+  );
+}
+
+function ChevronIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="m6 9 6 6 6-6" />
     </svg>
   );
 }

@@ -15,10 +15,11 @@ import { Card, CardContent, CardHeader, CardFooter } from "@/components/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/avatar";
 import { SearchBar } from "@/components/search_bar";
 import { SyncLoader } from "react-spinners";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function ArticlesPage() {
   const { theme, toggleTheme } = useTheme();
-  const [language, setLanguage] = useState("kn");
+  const { language, toggleLanguage } = useLanguage();
   const [highlight, setHighlight] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
   const [articles, setArticles] = useState([]);
@@ -73,10 +74,6 @@ export default function ArticlesPage() {
 
     return () => clearTimeout(timer);
   }, []);
-
-  const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === "en" ? "kn" : "en"));
-  };
 
   if (loading) {
     return (

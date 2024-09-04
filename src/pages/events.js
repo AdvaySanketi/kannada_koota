@@ -4,10 +4,11 @@ import Link from "next/link";
 import { Button } from "@/components/button";
 import { AdminLoginModal } from "@/components/adminLoginModal";
 import { SyncLoader } from "react-spinners";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function EventsPage() {
   const { theme, toggleTheme } = useTheme();
-  const [language, setLanguage] = useState("kn");
+  const { language, toggleLanguage } = useLanguage();
   const [highlight, setHighlight] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
   const [events, setEvents] = useState([]);
@@ -50,11 +51,6 @@ export default function EventsPage() {
 
     fetchEvents();
   }, []);
-
-  // Function to toggle between languages
-  const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === "en" ? "kn" : "en"));
-  };
 
   useEffect(() => {
     setHighlight(true);

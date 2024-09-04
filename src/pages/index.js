@@ -12,10 +12,11 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { AdminLoginModal } from "@/components/adminLoginModal";
 import { SyncLoader } from "react-spinners";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function HomePage() {
   const { theme, toggleTheme } = useTheme();
-  const [language, setLanguage] = useState("kn");
+  const { language, toggleLanguage } = useLanguage();
   const [highlight, setHighlight] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
   const [announcements, setAnnouncements] = useState([]);
@@ -39,11 +40,6 @@ export default function HomePage() {
 
     fetchAnnouncements();
   }, []);
-
-  // Function to toggle between languages
-  const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === "en" ? "kn" : "en"));
-  };
 
   useEffect(() => {
     setHighlight(true);
@@ -69,8 +65,8 @@ export default function HomePage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-gradient-to-br from-[#0F172A] to-[#1E293B] text-gray-900 dark:text-white">
-      <header className="flex items-center justify-between px-6 py-4 border-b border-gray-300 dark:border-gray-700">
+    <div className="flex flex-col min-h-screen w-full bg-gray-100 dark:bg-gradient-to-br from-[#0F172A] to-[#1E293B] text-gray-900 dark:text-white">
+      <header className="flex items-center justify-between w-full px-6 py-4 border-b border-gray-300 dark:border-gray-700">
         <div className="flex items-center gap-4">
           <Link href="" prefetch={false}>
             <img
@@ -164,7 +160,7 @@ export default function HomePage() {
           </Button>
         </div>
       </header>
-      <main className="flex-1 px-6 py-12">
+      <main className="flex-1 w-full flex flex-col px-6 py-12">
         <section className="max-w-3xl mx-auto space-y-6">
           <h1 className="text-4xl font-bold">
             {textContent[language].welcome}
@@ -222,7 +218,7 @@ export default function HomePage() {
           )}
         </section>
       </main>
-      <footer className="bg-gray-200 dark:bg-gray-800 px-6 py-8">
+      <footer className="bg-gray-200 w-full dark:bg-gray-800 px-6 py-8">
         <div className="text-center text-sm text-gray-700 dark:text-gray-400">
           <p>&copy; 2024 Kannada Koota. All rights reserved.</p>
           <p>

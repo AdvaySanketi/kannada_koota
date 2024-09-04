@@ -3,6 +3,7 @@ import { useTheme } from "@/context/ThemeContext";
 import Link from "next/link";
 import { Button } from "@/components/button";
 import { AdminLoginModal } from "@/components/adminLoginModal";
+import { useLanguage } from "@/context/LanguageContext";
 
 const seeds = [
   "cali",
@@ -29,7 +30,7 @@ const seeds = [
 
 export default function AboutUsPage() {
   const { theme, toggleTheme } = useTheme();
-  const [language, setLanguage] = useState("kn");
+  const { language, toggleLanguage } = useLanguage();
   const [highlight, setHighlight] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
   const [members, setMembers] = useState([]);
@@ -50,11 +51,6 @@ export default function AboutUsPage() {
 
     fetchMembers();
   }, []);
-
-  // Function to toggle between languages
-  const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === "en" ? "kn" : "en"));
-  };
 
   // Text content based on the selected language
   const textContent = {
