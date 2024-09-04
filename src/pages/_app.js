@@ -14,8 +14,8 @@ function MyApp({ Component, pageProps }) {
       overlay.style.position = "fixed";
       overlay.style.top = "0";
       overlay.style.left = "0";
-      overlay.style.width = "100vw";
-      overlay.style.height = "100vh";
+      overlay.style.width = "100vw !important";
+      overlay.style.height = "100%";
       overlay.style.backgroundColor = "rgba(255, 255, 255, 1)";
       overlay.style.color = "black";
       overlay.style.display = "flex";
@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
       overlay.style.alignItems = "center";
       overlay.style.zIndex = "9999";
       overlay.style.textAlign = "center";
-      overlay.style.fontSize = "1.5rem";
+      overlay.style.fontSize = "2.2rem";
       overlay.style.padding = "20px";
       overlay.style.pointerEvents = "none";
 
