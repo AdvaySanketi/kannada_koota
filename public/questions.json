@@ -1,0 +1,2498 @@
+{
+  "questions": {
+    "1980s The foundations of IT": [
+      {
+        "question": "Which significant organization was established in Karnataka in 1980 to promote electronics development?",
+        "question_kannada": "ಇಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ಅಭಿವೃದ್ಧಿಯನ್ನು ಉತ್ತೇಜಿಸಲು 1980ರಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಸ್ಥಾಪಿತವಾದ ಪ್ರಮುಖ ಸಂಸ್ಥೆ ಯಾವುದು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Karnataka State Electronics Development Corporation (KEONICS)",
+            "answer_kannada": "ಕರ್ನಾಟಕ ರಾಜ್ಯ ಇಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ಅಭಿವೃದ್ಧಿ ಸಂಸ್ಥೆ (KEONICS)",
+            "isCorrect": true
+          },
+          {
+            "answer": "Indian Institute of Science (IISc)",
+            "answer_kannada": "ಭಾರತೀಯ ವಿಜ್ಞಾನ ಸಂಸ್ಥೆ (IISc)",
+            "isCorrect": false
+          },
+          {
+            "answer": "Bangalore Development Authority (BDA)",
+            "answer_kannada": "ಬೆಂಗಳೂರು ಅಭಿವೃದ್ಧಿ ಪ್ರಾಧಿಕಾರ (BDA)",
+            "isCorrect": false
+          },
+          {
+            "answer": "Software Technology Parks of India (STPI)",
+            "answer_kannada": "ಭಾರತದ ಸಾಫ್ಟ್‌ವೇರ್ ತಂತ್ರಜ್ಞಾನ ಉದ್ಯಾನಗಳು (STPI)",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What major milestone in the IT sector occurred with the founding of Infosys in 1981?",
+        "question_kannada": "1981ರಲ್ಲಿ ಇನ್ಫೋಸಿಸ್ ಸ್ಥಾಪನೆಯೊಂದಿಗೆ ಐಟಿ ವಲಯದಲ್ಲಿ ಸಂಭವಿಸಿದ ಪ್ರಮುಖ ಘಟನೆಯನ್ನು ಏನೆಂದು ಹೇಳಬಹುದು?",
+        "score": 1,
+        "options": [
+          {
+            "answer": "It was the first software company in India.",
+            "answer_kannada": "ಇದು ಭಾರತದ ಮೊದಲ ಸಾಫ್ಟ್‌ವೇರ್ ಕಂಪನಿಯಾಗಿತ್ತು.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It marked the beginning of the software industry in Karnataka.",
+            "answer_kannada": "ಇದು ಕರ್ನಾಟಕದಲ್ಲಿ ಸಾಫ್ಟ್‌ವೇರ್ ಉದ್ಯಮದ ಆರಂಭವನ್ನು ಗುರುತಿಸುತ್ತದೆ.",
+            "isCorrect": true
+          },
+          {
+            "answer": "It established India's first IT park.",
+            "answer_kannada": "ಇದು ಭಾರತದ ಮೊದಲ ಐಟಿ ಪಾರ್ಕ್ ಅನ್ನು ಸ್ಥಾಪಿಸಿತು.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It was the first Indian company to go public.",
+            "answer_kannada": "ಇದು ಸಾರ್ವಜನಿಕವಾಗಿರುವ ಮೊದಲ ಭಾರತೀಯ ಕಂಪನಿಯಾಗಿತ್ತು.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What was the focus of the Karnataka Electronics Policy introduced in the 1980s?",
+        "question_kannada": "1980ರ ದಶಕದಲ್ಲಿ ಪರಿಚಯಿಸಲಾದ ಕರ್ನಾಟಕ ಇಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ನೀತಿಯ ಉದ್ದೇಶವೇನು?",
+        "score": 1,
+        "options": [
+          {
+            "answer": "To promote agriculture",
+            "answer_kannada": "ಕೃಷಿಯ ಪ್ರೋತ್ಸಾಹಿಸಲು",
+            "isCorrect": false
+          },
+          {
+            "answer": "To enhance the tourism sector",
+            "answer_kannada": "ಪ್ರವಾಸೋದ್ಯಮ ಕ್ಷೇತ್ರವನ್ನು ಹೆಚ್ಚಿಸಲು",
+            "isCorrect": false
+          },
+          {
+            "answer": "To develop the electronics industry",
+            "answer_kannada": "ಇಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ಉದ್ಯಮವನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಲು",
+            "isCorrect": true
+          },
+          {
+            "answer": "To support traditional crafts",
+            "answer_kannada": "ಪರಂಪರಾ ಕೈಬುಲಿಕೆಯನ್ನು ಬೆಂಬಲಿಸಲು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "In which year was Infosys founded by N. R. Narayana Murthy?",
+        "question_kannada": "ಎನ್. ಆರ್. ನಾರಾಯಣ ಮೂರ್ತಿ ಅವರು ಯಾವ ವರ್ಷದಲ್ಲಿ ಇನ್ಫೋಸಿಸ್ ಅನ್ನು ಸ್ಥಾಪಿಸಿದರು?",
+        "score": 1,
+        "options": [
+          {
+            "answer": "1980",
+            "answer_kannada": "1980",
+            "isCorrect": false
+          },
+          {
+            "answer": "1981",
+            "answer_kannada": "1981",
+            "isCorrect": true
+          },
+          {
+            "answer": "1983",
+            "answer_kannada": "1983",
+            "isCorrect": false
+          },
+          {
+            "answer": "1984",
+            "answer_kannada": "1984",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What was one of the major contributions of Infosys to the tech sector after moving to Bengaluru?",
+        "question_kannada": "ಇನ್ಫೋಸಿಸ್ ಬೆಂಗಳೂರಿಗೆ ಸ್ಥಳಾಂತರಗೊಂಡ ನಂತರ ತಂತ್ರಜ್ಞಾನ ವಲ್ಯಕ್ಕೆ ನೀಡಿದ ಪ್ರಮುಖ ಕೊಡುಗೆ ಯಾವುದು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Launching mobile applications",
+            "answer_kannada": "ಮೊಬೈಲ್ ಅಪ್ಲಿಕೇಶನ್‌ಗಳನ್ನು ಲಾಂಚ್ ಮಾಡುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Developing the first Indian supercomputer",
+            "answer_kannada": "ಪ್ರಥಮ ಭಾರತೀಯ ಸೂಪರ್‌ಕಂಪ್ಯೂಟರ್ ಅನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Providing IT services and software development",
+            "answer_kannada": "ಐಟಿ ಸೇವೆಗಳನ್ನು ಮತ್ತು ಸಾಫ್ಟ್‌ವೇರ್ ಅಭಿವೃದ್ಧಿ ಒದಗಿಸುವುದು",
+            "isCorrect": true
+          },
+          {
+            "answer": "Establishing an IT park",
+            "answer_kannada": "ಐಟಿ ಪಾರ್ಕ್ ಅನ್ನು ಸ್ಥಾಪಿಸುವುದು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What significant change did Infosys undergo after its establishment in 1981?",
+        "question_kannada": "ಇನ್ಫೋಸಿಸ್ 1981ರಲ್ಲಿ ಸ್ಥಾಪನೆಯಾದ ನಂತರ ಯಾವ ಮಹತ್ವದ ಬದಲಾವಣೆ ಅನುಭವಿಸಿತು?",
+        "score": 1,
+        "options": [
+          {
+            "answer": "Moved to the USA",
+            "answer_kannada": "ಯುಎಸ್‌ಎಗೆ ಸ್ಥಳಾಂತರಿಸಲಾಗಿದೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Shifted focus to hardware manufacturing",
+            "answer_kannada": "ಹಾರ್ಡ್ವೇರ್ ತಯಾರಿಕೆಗೆ ಗಮನವನ್ನು ವರ್ಗಾಯಿಸಲಾಗಿದೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Moved its headquarters to Bengaluru",
+            "answer_kannada": "ಇದು ತನ್ನ ಕೇಂದ್ರ ಕಚೇರಿಯನ್ನು ಬೆಂಗಳೂರಿಗೆ ಸ್ಥಳಾಂತರಿಸಿತು",
+            "isCorrect": true
+          },
+          {
+            "answer": "Went public immediately",
+            "answer_kannada": "ತರಬೇತಿ ನೀಡಲು ಹೋಗಿದೆಯೆ?",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which pioneering software company was founded in Bangalore in 1982?",
+        "question_kannada": "1982ರಲ್ಲಿ ಬೆಂಗಳೂರುನಲ್ಲಿ ಯಾವ ಪ್ರಮುಖ ಸಾಫ್ಟ್‌ವೇರ್ ಕಂಪನಿಯನ್ನು ಸ್ಥಾಪಿಸಲಾಯಿತು?",
+        "score": 1,
+        "options": [
+          {
+            "answer": "Wipro",
+            "answer_kannada": "ವಿಪ್ರೋ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Infosys",
+            "answer_kannada": "ಇನ್ಫೋಸಿಸ್",
+            "isCorrect": true
+          },
+          {
+            "answer": "HCL",
+            "answer_kannada": "ಎಚ್‌ಸಿಎಲ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "TCS",
+            "answer_kannada": "ಟಿಸಿಎಸ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "In 1982, which major telecommunications project was launched?",
+        "question_kannada": "1982ರಲ್ಲಿ ಯಾವ ಪ್ರಮುಖ ದೂರಸಂಪರ್ಕ ಯೋಜನೆ ಪ್ರಾರಂಭಿಸಲಾಯಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Fiber optic network",
+            "answer_kannada": "ಫೈಬರ್ ಆಪ್ಟಿಕ್ ನೆಟ್ವರ್ಕ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Expansion of the telecommunication network",
+            "answer_kannada": "ದೂರಸಂಪರ್ಕ ನೆಟ್ವರ್ಕ್ ವಿಸ್ತರಣೆ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Satellite communication",
+            "answer_kannada": "ಉಪಗ್ರಹ ಸಂಪರ್ಕ",
+            "isCorrect": false
+          },
+          {
+            "answer": "GSM services",
+            "answer_kannada": "ಜಿಎಸ್‌ಎಮ್ ಸೇವೆಗಳು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What significant milestone did the Karnataka government achieve in computer education in 1982?",
+        "question_kannada": "1982ರಲ್ಲಿ ಕರ್ನಾಟಕ ಸರ್ಕಾರ ಕಂಪ್ಯೂಟರ್ ಶಿಕ್ಷಣದಲ್ಲಿ ಯಾವ ಮಹತ್ವದ ಮೈಲಿಗಲ್ಲು ಸಾಧಿಸಿತು?",
+        "score": 1,
+        "options": [
+          {
+            "answer": "Establishment of the first IT university",
+            "answer_kannada": "ಮೊದಲ ಐಟಿ ವಿಶ್ವವಿದ್ಯಾಲಯವನ್ನು ಸ್ಥಾಪಿಸುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Launch of computer training programs",
+            "answer_kannada": "ಕಂಪ್ಯೂಟರ್ ತರಬೇತಿ ಕಾರ್ಯಕ್ರಮಗಳ ಪ್ರಾರಂಭ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Introduction of computer science in schools",
+            "answer_kannada": "ಶಾಲೆಗಳಲ್ಲಿ ಕಂಪ್ಯೂಟರ್ ವಿಜ್ಞಾನವನ್ನು ಪರಿಚಯಿಸುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Establishment of a tech incubator",
+            "answer_kannada": "ಟೆಕ್ ಇಂಕ್ಯೂಬೇಟರ್ ಅನ್ನು ಸ್ಥಾಪಿಸುವುದು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What was the main goal of the Software Technology Parks of India (STPI) established in Karnataka in 1983?",
+        "question_kannada": "1983ರಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಸ್ಥಾಪಿಸಲಾದ ಸಾಫ್ಟ್‌ವೇರ್ ತಂತ್ರಜ್ಞಾನ ಉದ್ಯಾನಗಳು (STPI) ಯ ಮುಖ್ಯ ಉದ್ದೇಶ ಏನು?",
+        "score": 1,
+        "options": [
+          {
+            "answer": "To promote hardware manufacturing",
+            "answer_kannada": "ಹಾರ್ಡ್‌ವೇರ್ ತಯಾರಿಕೆಯನ್ನು ಪ್ರೋತ್ಸಾಹಿಸಲು",
+            "isCorrect": false
+          },
+          {
+            "answer": "To support software development and exports",
+            "answer_kannada": "ಸಾಫ್ಟ್‌ವೇರ್ ಅಭಿವೃದ್ಧಿ ಮತ್ತು ರಫ್ತಿಗೆ ಬೆಂಬಲ ನೀಡಲು",
+            "isCorrect": true
+          },
+          {
+            "answer": "To enhance telecommunications",
+            "answer_kannada": "ದೂರಸಂಪರ್ಕವನ್ನು ಸುಧಾರಿಸಲು",
+            "isCorrect": false
+          },
+          {
+            "answer": "To develop biotechnology",
+            "answer_kannada": "ಜೈವ ತಂತ್ರಜ್ಞಾನವನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಲು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "In 1983, which notable IT policy was introduced in Karnataka?",
+        "question_kannada": "1983ರಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಯಾವ ಪ್ರಮುಖ ಐಟಿ ನೀತಿಯನ್ನು ಪರಿಚಯಿಸಲಾಯಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Karnataka Agriculture Policy",
+            "answer_kannada": "ಕರ್ನಾಟಕ ಕೃಷಿ ನೀತಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Karnataka Electronics Policy",
+            "answer_kannada": "ಕರ್ನಾಟಕ ಇಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ನೀತಿ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Karnataka Health Policy",
+            "answer_kannada": "ಕರ್ನಾಟಕ ಆರೋಗ್ಯ ನೀತಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Karnataka Tourism Policy",
+            "answer_kannada": "ಕರ್ನಾಟಕ ಪ್ರವಾಸೋದ್ಯಮ ನೀತಿ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which significant event related to computing took place in Karnataka in 1983?",
+        "question_kannada": "1983ರಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಕಂಪ್ಯೂಟಿಂಗ್‌ಗೆ ಸಂಬಂಧಿಸಿದ ಯಾವ ಪ್ರಮುಖ ಘಟನೆ ನಡೆಯಿತು?",
+        "score": 1,
+        "options": [
+          {
+            "answer": "The first national conference on software",
+            "answer_kannada": "ಸಾಫ್ಟ್‌ವೇರ್ ಕುರಿತು ಮೊದಲ ರಾಷ್ಟ್ರೀಯ ಸಮಾವೇಶ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Launch of the first computer festival",
+            "answer_kannada": "ಮೊದಲ ಕಂಪ್ಯೂಟರ್ ಹಬ್ಬವನ್ನು ಆರಂಭಿಸುತ್ತಿದ್ದಾರೆ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Establishment of a tech park",
+            "answer_kannada": "ಟೆಕ್ ಪಾರ್ಕ್ ಸ್ಥಾಪನೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Inauguration of an IT university",
+            "answer_kannada": "ಐಟಿ ವಿಶ್ವವಿದ್ಯಾಲಯದ ಉದ್ಘಾಟನೆ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which major technology company opened its R&D facility in Bengaluru in 1984, marking the city's appeal to global tech firms?",
+        "question_kannada": "1984ರಲ್ಲಿ ಯಾವ ಪ್ರಮುಖ ತಂತ್ರಜ್ಞಾನ ಕಂಪನಿಯು ಬೆಂಗಳೂರಿನಲ್ಲಿ ತನ್ನ R&D ಸೌಕರ್ಯವನ್ನು ತೆರೆಯಿತು, ಇದು ವಿಶ್ವದ ತಂತ್ರಜ್ಞಾನ ಸಂಸ್ಥೆಗಳ ಗಮನವನ್ನು ನಗರಕ್ಕೆ ಸೆಳೆದಿತು?",
+        "score": 1,
+        "options": [
+          {
+            "answer": "Intel",
+            "answer_kannada": "ಇಂಟೆಲ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Microsoft",
+            "answer_kannada": "ಮೈಕ್ರೋಸಾಫ್ಟ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Texas Instruments",
+            "answer_kannada": "ಟೆಕ್ಸಾಸ್ ಉಪಕರಣಗಳು",
+            "isCorrect": true
+          },
+          {
+            "answer": "IBM",
+            "answer_kannada": "ಐಬಿಎಮ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What was significant about Texas Instruments' establishment in Bengaluru in 1984?",
+        "question_kannada": "1984ರಲ್ಲಿ ಬೆಂಗಳೂರಿನಲ್ಲಿ ಟೆಕ್ಸಾಸ್ ಇನ್ಸ್‌ಟ್ರುಮೆಂಟ್ಸ್ ಸ್ಥಾಪನೆಯ ಮಹತ್ವವೇನು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "It was the first Indian tech company.",
+            "answer_kannada": "ಇದು ಭಾರತದ ಮೊದಲ ತಂತ್ರಜ್ಞಾನ ಕಂಪನಿಯಾಗಿತ್ತು.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It was the first multinational company to set up a base in India.",
+            "answer_kannada": "ಇದು ಭಾರತದ ಆಧಾರವನ್ನು ಹೊಂದುವ ಮೊದಲ ಅಂತಾರಾಷ್ಟ್ರೀಯ ಕಂಪನಿಯಾಗಿತ್ತು.",
+            "isCorrect": true
+          },
+          {
+            "answer": "It focused solely on consumer electronics.",
+            "answer_kannada": "ಇದು ಸಂಪೂರ್ಣವಾಗಿ ಗ್ರಾಹಕ ಎಲೆಕ್ಟ್ರಾನಿಕ್ಸ್‌ನಲ್ಲಿ ಕೇಂದ್ರೀಕೃತವಾಗಿತ್ತು.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It launched India's first smartphone.",
+            "answer_kannada": "ಇದು ಭಾರತದ ಮೊದಲ ಸ್ಮಾರ್ಟ್‌ಫೋನ್ ಅನ್ನು ಲಾಂಚ್ ಮಾಡಿತು.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What impact did Texas Instruments’ R&D facility have on the tech ecosystem in Karnataka?",
+        "question_kannada": "ಟೆಕ್ಸಾಸ್ ಇನ್ಸ್‌ಟ್ರುಮೆಂಟ್ಸ್‌ ಅವರ R&D ಸೌಲಭ್ಯವು ಕರ್ನಾಟಕದ ತಂತ್ರಜ್ಞಾನ ಪರಿಸರದ ಮೇಲೆ ಏನು ಪರಿಣಾಮ ಬೀರಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "It reduced employment opportunities.",
+            "answer_kannada": "ಇದು ಉದ್ಯೋಗಾವಕಾಸಗಳನ್ನು ಕಡಿಮೆ ಮಾಡಿತು.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It led to increased foreign investment in tech.",
+            "answer_kannada": "ಇದು ತಂತ್ರಜ್ಞಾನದಲ್ಲಿ ವಿದೇಶಿ ಹೂಡಿಕೆ ಹೆಚ್ಚಿಸಲು ಕಾರಣವಾಯಿತು.",
+            "isCorrect": true
+          },
+          {
+            "answer": "It created competition for local firms.",
+            "answer_kannada": "ಇದು ಸ್ಥಳೀಯ ಕಂಪನಿಗಳಿಗೆ ಸ್ಪರ್ಧೆ ನಿರ್ಮಿಸಿತು.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It focused on traditional industries.",
+            "answer_kannada": "ಇದು ಪರಂಪರಾ ಕೈಗಾರಿಕೆಯಲ್ಲಿ ಕೇಂದ್ರೀಕೃತವಾಗಿತ್ತು.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which prominent biotechnology company was established in Karnataka in 1985?",
+        "question_kannada": "1985ರಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಯಾವ ಪ್ರಮುಖ ಜೈವಿಕ ತಂತ್ರಜ್ಞಾನ ಕಂಪನಿಯು ಸ್ಥಾಪಿಸಲಾಯಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Biocon",
+            "answer_kannada": "ಬಾಯೋಕಾನ್",
+            "isCorrect": true
+          },
+          {
+            "answer": "Wipro",
+            "answer_kannada": "ವಿಪ್ರೋ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Dr. Reddy’s Laboratories",
+            "answer_kannada": "ಡಾ. ರೆಡ್ಡಿ’s ಲ್ಯಾಬೊರೇಟೊರೀಸ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Serum Institute",
+            "answer_kannada": "ಸೀರಮ್ ಇನ್‌ಸ್ಟಿಟ್ಯೂಟ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What was the focus of the Karnataka government’s policy in the biotechnology sector introduced in 1985?",
+        "question_kannada": "1985ರಲ್ಲಿ ಜೈವಿಕ ತಂತ್ರಜ್ಞಾನ ಕ್ಷೇತ್ರದಲ್ಲಿ ಕರ್ನಾಟಕ ಸರ್ಕಾರದ ನೀತಿಯ ಮುಖ್ಯ ಉದ್ದೇಶ ಏನು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Promoting agriculture",
+            "answer_kannada": "ಕೃಷಿಯ ಪ್ರೋತ್ಸಾಹಿಸಲು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Promoting research and development",
+            "answer_kannada": "ಶೋಧ ಮತ್ತು ಅಭಿವೃದ್ಧಿಯ ಉತ್ತೇಜನ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Supporting traditional medicine",
+            "answer_kannada": "ಪರಂಪರಾ ವೈದ್ಯಕೀಯಕ್ಕೆ ಬೆಂಬಲ ನೀಡುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Exporting biotechnology products",
+            "answer_kannada": "ಜೈವಿಕ ತಂತ್ರಜ್ಞಾನ ಉತ್ಪನ್ನಗಳನ್ನು ರಫ್ತು ಮಾಡಲು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which important technology conference took place in Karnataka in 1985?",
+        "question_kannada": "1985ರಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಯಾವ ಪ್ರಮುಖ ತಂತ್ರಜ್ಞಾನ ಸಮ್ಮೇಳನ ನಡೆಯಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "National Conference on Bioinformatics",
+            "answer_kannada": "ಜೈವಿಕ ಮಾಹಿತಿಯ ಕುರಿತ ರಾಷ್ಟ್ರೀಯ ಸಮ್ಮೇಳನ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Bangalore Tech Summit",
+            "answer_kannada": "ಬೆಂಗಳೂರು ತಂತ್ರಜ್ಞಾನ ಶಿಖರ ಸಮ್ಮೇಳನ",
+            "isCorrect": false
+          },
+          {
+            "answer": "National Conference on Biotechnology",
+            "answer_kannada": "ಜೈವಿಕ ತಂತ್ರಜ್ಞಾನ ಕುರಿತ ರಾಷ್ಟ್ರೀಯ ಸಮ್ಮೇಳನ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Global IT Conference",
+            "answer_kannada": "ಜಾಗತಿಕ ಐಟಿ ಸಮ್ಮೇಳನ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What organization was established in 1986 to develop India’s supercomputing capabilities?",
+        "question_kannada": "1986ರಲ್ಲಿ ಭಾರತದ ಸೂಪರ್‌ಕಂಪ್ಯೂಟರ್ ಸಾಮರ್ಥ್ಯಗಳನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಲು ಯಾವ ಸಂಸ್ಥೆಯನ್ನು ಸ್ಥಾಪಿಸಲಾಯಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Indian Institute of Technology (IIT)",
+            "answer_kannada": "ಭಾರತೀಯ ತಂತ್ರಜ್ಞಾನ ಸಂಸ್ಥೆ (IIT)",
+            "isCorrect": false
+          },
+          {
+            "answer": "Centre for Development of Advanced Computing (C-DAC)",
+            "answer_kannada": "ಅತ್ಯಾಧುನಿಕ ಕಂಪ್ಯೂಟಿಂಗ್ ಅಭಿವೃದ್ಧಿ ಕೇಂದ್ರ (C-DAC)",
+            "isCorrect": true
+          },
+          {
+            "answer": "National Institute of Fashion Technology (NIFT)",
+            "answer_kannada": "ಜಾತಿಯ ಫ್ಯಾಷನ್ ತಂತ್ರಜ್ಞಾನ ಸಂಸ್ಥೆ (NIFT)",
+            "isCorrect": false
+          },
+          {
+            "answer": "Indian Space Research Organisation (ISRO)",
+            "answer_kannada": "ಭಾರತೀಯ ಬಾಹ್ಯಾಕಾಶ ಸಂಶೋಧನಾ ಸಂಘಟನೆ (ISRO)",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What was the primary goal of C-DAC when it was established?",
+        "question_kannada": "C-DAC ಸ್ಥಾಪನೆಯ ಪ್ರಾಥಮಿಕ ಗುರಿ ಏನು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "To promote traditional crafts",
+            "answer_kannada": "ಪರಂಪರಾ ಕೈಬುಲಿಕೆಯನ್ನು ಪ್ರೋತ್ಸಾಹಿಸಲು",
+            "isCorrect": false
+          },
+          {
+            "answer": "To develop supercomputing technology",
+            "answer_kannada": "ಸೂಪರ್‌ಕಂಪ್ಯೂಟಿಂಗ್ ತಂತ್ರಜ್ಞಾನವನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಲು",
+            "isCorrect": true
+          },
+          {
+            "answer": "To manufacture hardware",
+            "answer_kannada": "ಹಾರ್ಡ್‌ವೇರ್ ಉತ್ಪಾದಿಸಲು",
+            "isCorrect": false
+          },
+          {
+            "answer": "To create mobile applications",
+            "answer_kannada": "ಮೊಬೈಲ್ ಅಪ್ಲಿಕೇಶನ್‌ಗಳನ್ನು ನಿರ್ಮಿಸಲು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which achievement is C-DAC known for in the realm of computing?",
+        "question_kannada": "ಕಂಪ್ಯೂಟಿಂಗ್ ಕ್ಷೇತ್ರದಲ್ಲಿ C-DAC ಯಾವ ಸಾಧನೆಗಾಗಿ ಪ್ರಸಿದ್ಧ?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Launching India's first computer",
+            "answer_kannada": "ಭಾರತದ ಮೊದಲ ಕಂಪ್ಯೂಟರ್ ಅನ್ನು ಲಾಂಚ್ ಮಾಡುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Developing the PARAM supercomputer",
+            "answer_kannada": "PARAM ಸೂಪರ್‌ಕಂಪ್ಯೂಟರ್ ಅನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸುವುದು",
+            "isCorrect": true
+          },
+          {
+            "answer": "Establishing India's first IT park",
+            "answer_kannada": "ಭಾರತದ ಮೊದಲ ಐಟಿ ಪಾರ್ಕ್ ಅನ್ನು ಸ್ಥಾಪಿಸುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Launching commercial satellites",
+            "answer_kannada": "ವಾಣಿಜ್ಯ ಉಪಗ್ರಹಗಳನ್ನು ಲಾಂಚ್ ಮಾಡುವುದು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What significant shift did Wipro make in 1987 under Azim Premji’s leadership?",
+        "question_kannada": "1987ರಲ್ಲಿ ಅಜೀಮ್ ಪ್ರೇಮ್ಜಿ ಅವರ ನೇತೃತ್ವದಲ್ಲಿ ವಿಪ್ರೊ ಯಾವ ಮಹತ್ವದ ಬದಲಾವಣೆ ಮಾಡಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Expanded into international markets",
+            "answer_kannada": "ಅಂತರಾಷ್ಟ್ರೀಯ ಮಾರುಕಟ್ಟೆಗಳಲ್ಲಿ ವಿಸ್ತಾರಗೊಳಿಸಿದೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Focused on IT services instead of consumer products",
+            "answer_kannada": "ಗ್ರಾಹಕ ಉತ್ಪನ್ನಗಳ ಬದಲಾಗಿ ಐಟಿ ಸೇವೆಗಳ ಮೇಲೆ ಕೇಂದ್ರೀಕೃತವಾಗಿದೆ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Launched a new line of consumer electronics",
+            "answer_kannada": "ಹೊಸ ಗ್ರಾಹಕ ಎಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ಶ್ರೇಣಿಯನ್ನು ಪ್ರಾರಂಭಿಸುತ್ತಿದೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Merged with another tech company",
+            "answer_kannada": "ಮರುನಿವೇಶವಾಗಿದ್ದರೆ ಮತ್ತೊಂದು ತಂತ್ರಜ್ಞಾನ ಕಂಪನಿಯೊಂದಿಗೆ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What was the impact of Wipro’s shift to IT services on Karnataka’s tech industry?",
+        "question_kannada": "ವಿಪ್ರೊನ ಐಟಿ ಸೇವೆಗಳಿಗೆ ಬದಲಾವಣೆಯು ಕರ್ನಾಟಕದ ತಂತ್ರಜ್ಞಾನ ಕೈಗಾರಿಕೆಯ ಮೇಲೆ ಏನು ಪರಿಣಾಮ ಬೀರಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "It diminished the state's tech growth.",
+            "answer_kannada": "ಇದು ರಾಜ್ಯದ ತಂತ್ರಜ್ಞಾನ ಬೆಳವಣಿಗೆಯನ್ನು ಕಡಿಮೆ ಮಾಡಿತು.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It accelerated the growth of the IT sector.",
+            "answer_kannada": "ಇದು ಐಟಿ ಕ್ಷೇತ್ರದ ಬೆಳವಣಿಗೆಯನ್ನು ವೇಗಗೊಳಿಸಿದೆ.",
+            "isCorrect": true
+          },
+          {
+            "answer": "It limited job opportunities.",
+            "answer_kannada": "ಇದು ಉದ್ಯೋಗಾವಕಾಶಗಳನ್ನು ಸೀಮಿತಗೊಳಿಸಿದೆ.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It caused a decline in local startups.",
+            "answer_kannada": "ಇದು ಸ್ಥಳೀಯ ಸ್ಟಾರ್ಟಪ್‌ಗಳಲ್ಲಿ ಇಳಿಕೆ ತಂದಿತು.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "In what year did Wipro shift its focus from consumer products to IT services?",
+        "question_kannada": "ವಿಪ್ರೊ ಯಾವ ವರ್ಷದಲ್ಲಿ ಗ್ರಾಹಕ ಉತ್ಪನ್ನಗಳಿಂದ ಐಟಿ ಸೇವೆಗಳಿಗೆ ತನ್ನ ಗಮನವನ್ನು ಬದಲಾಯಿಸಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "1985",
+            "answer_kannada": "1985",
+            "isCorrect": false
+          },
+          {
+            "answer": "1986",
+            "answer_kannada": "1986",
+            "isCorrect": false
+          },
+          {
+            "answer": "1987",
+            "answer_kannada": "1987",
+            "isCorrect": true
+          },
+          {
+            "answer": "1988",
+            "answer_kannada": "1988",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What key policy did the Karnataka government introduce in 1988 to attract IT companies?",
+        "question_kannada": "ಐಟಿ ಕಂಪನಿಗಳನ್ನು ಆಕರ್ಷಿಸಲು 1988ರಲ್ಲಿ ಕರ್ನಾಟಕ ಸರ್ಕಾರ ಯಾವ ಮುಖ್ಯ ನೀತಿಯನ್ನು ಪರಿಚಯಿಸಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Karnataka Health Policy",
+            "answer_kannada": "ಕರ್ನಾಟಕ ಆರೋಗ್ಯ ನೀತಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Karnataka Electronics Policy",
+            "answer_kannada": "ಕರ್ನಾಟಕ ಇಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ನೀತಿ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Karnataka Education Policy",
+            "answer_kannada": "ಕರ್ನಾಟಕ ಶಿಕ್ಷಣ ನೀತಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Karnataka Tourism Policy",
+            "answer_kannada": "ಕರ್ನಾಟಕ ಪ್ರವಾಸೋದ್ಯಮ ನೀತಿ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "In 1988, which technology park was inaugurated in Karnataka?",
+        "question_kannada": "1988ರಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಯಾವ ತಂತ್ರಜ್ಞಾನ ಪಾರ್ಕ್ ಉದ್ಘಾಟನೆಗೊಂಡಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Electronic City",
+            "answer_kannada": "ಇಲೆಕ್ಟ್ರಾನಿಕ್ ನಗರ",
+            "isCorrect": true
+          },
+          {
+            "answer": "International Technology Park",
+            "answer_kannada": "ಅಂತರರಾಷ್ಟ್ರೀಯ ತಂತ್ರಜ್ಞಾನ ಪಾರ್ಕ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Bangalore Tech Park",
+            "answer_kannada": "ಬೆಂಗಳೂರು ತಂತ್ರಜ್ಞಾನ ಪಾರ್ಕ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Silicon Valley of India",
+            "answer_kannada": "ಭಾರತದ ಸಿಲಿಕಾನ್ ವಾಲಿ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which major telecommunications company began operations in Karnataka in 1988?",
+        "question_kannada": "1988ರಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಕಾರ್ಯಾರಂಭ ಮಾಡಿದ ಪ್ರಮುಖ ದೂರಸಂಪರ್ಕ ಕಂಪನಿಯೇನಿದು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "BSNL",
+            "answer_kannada": "BSNL",
+            "isCorrect": false
+          },
+          {
+            "answer": "Airtel",
+            "answer_kannada": "Airtel",
+            "isCorrect": true
+          },
+          {
+            "answer": "Vodafone",
+            "answer_kannada": "Vodafone",
+            "isCorrect": false
+          },
+          {
+            "answer": "Jio",
+            "answer_kannada": "Jio",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What was the focus of the Karnataka State Council for Science and Technology (KSCST) established in 1989?",
+        "question_kannada": "1989ರಲ್ಲಿ ಸ್ಥಾಪನೆಯಾದ ಕರ್ನಾಟಕ ರಾಜ್ಯ ವಿಜ್ಞಾನ ಮತ್ತು ತಂತ್ರಜ್ಞಾನ ಪರಿಷತ್ತಿನ (KSCST) ಪ್ರಧಾನ ಉದ್ದೇಶವೇನು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Promoting agriculture",
+            "answer_kannada": "ಕೃಷಿಯ ಪ್ರೋತ್ಸಾಹಿಸಲು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Promoting research and development in science and technology",
+            "answer_kannada": "ವಿಜ್ಞಾನ ಮತ್ತು ತಂತ್ರಜ್ಞಾನದಲ್ಲಿ ಶೋಧ ಮತ್ತು ಅಭಿವೃದ್ಧಿಯ ಉತ್ತೇಜನ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Supporting traditional industries",
+            "answer_kannada": "ಪರಂಪರಾ ಕೈಗಾರಿಕೆಗಳಿಗೆ ಬೆಂಬಲ ನೀಡುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Exporting technology",
+            "answer_kannada": "ತಂತ್ರಜ್ಞಾನವನ್ನು ರಫ್ತು ಮಾಡುವುದು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which significant IT policy was introduced by the Karnataka government in 1989?",
+        "question_kannada": "1989ರಲ್ಲಿ ಕರ್ನಾಟಕ ಸರ್ಕಾರ ಪರಿಚಯಿಸಿದ ಪ್ರಮುಖ ಐಟಿ ನೀತಿ ಯಾವುದು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Karnataka Agriculture Policy",
+            "answer_kannada": "ಕರ್ನಾಟಕ ಕೃಷಿ ನೀತಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Karnataka Electronics Policy",
+            "answer_kannada": "ಕರ್ನಾಟಕ ಇಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ನೀತಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Karnataka Health Policy",
+            "answer_kannada": "ಕರ್ನಾಟಕ ಆರೋಗ್ಯ ನೀತಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Karnataka IT Policy",
+            "answer_kannada": "ಕರ್ನಾಟಕ ಐಟಿ ನೀತಿ",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "question": "What major collaboration occurred in 1989 between the Karnataka government and international organizations?",
+        "question_kannada": "1989ರಲ್ಲಿ ಕರ್ನಾಟಕ ಸರ್ಕಾರ ಮತ್ತು ಅಂತರಾಷ್ಟ್ರೀಯ ಸಂಸ್ಥೆಗಳ ನಡುವೆ ನಡೆದ ಪ್ರಮುಖ ಸಹಕಾರವೇನು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Joint IT programs with foreign universities",
+            "answer_kannada": "ಅಂತರರಾಷ್ಟ್ರೀಯ ವಿಶ್ವವಿದ್ಯಾಲಯಗಳೊಂದಿಗೆ ಜಂಟಿ ಐಟಿ ಕಾರ್ಯಕ್ರಮಗಳು",
+            "isCorrect": true
+          },
+          {
+            "answer": "Establishment of a tech incubator",
+            "answer_kannada": "ಟೆಕ್ ಇಂಕ್ಯೂಬೇಟರ್ ಅನ್ನು ಸ್ಥಾಪನೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Launch of a satellite program",
+            "answer_kannada": "ಉಪಗ್ರಹ ಕಾರ್ಯಕ್ರಮವನ್ನು ಪ್ರಾರಂಭಿಸುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Collaboration in agricultural research",
+            "answer_kannada": "ಕೃಷಿ ಸಂಶೋಧನೆಯಲ್ಲಿ ಸಹಕಾರ",
+            "isCorrect": false
+          }
+        ]
+      }
+    ],
+    "1990s The IT Boom": [
+      {
+        "question": "What significant economic policy was introduced in India in 1991 that led to the growth of the IT sector in Karnataka?",
+        "question_kannada": "1991ರಲ್ಲಿ ಭಾರತದ ಆರ್ಥಿಕ ಕ್ಷೇತ್ರದಲ್ಲಿ ಯಾವ ಪ್ರಮುಖ ನೀತಿ ಪರಿಚಯಿಸಲಾಯಿತು, ಇದರಿಂದ ಕರ್ನಾಟಕದಲ್ಲಿ ಐಟಿ ಕ್ಷೇತ್ರದ ಬೆಳವಣಿಗೆಗೆ ಕಾರಣವಾಯಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Green Revolution",
+            "answer_kannada": "ಹಸಿರು ಕ್ರಾಂತಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Liberalization of the Indian economy",
+            "answer_kannada": "ಭಾರತದ ಆರ್ಥಿಕ ಉಲ್ಲೇಖ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Nationalization of banks",
+            "answer_kannada": "ಬ್ಯಾಂಕುಗಳ ಜಾತೀಕರಣ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Implementation of the New Economic Policy",
+            "answer_kannada": "ಹೊಸದಿನಗಳ ಆರ್ಥಿಕ ನೀತಿಗಳ ಅನುಷ್ಠಾನ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which notable IT company was established in 1990 in Karnataka, marking the state’s emergence as a technology hub?",
+        "question_kannada": "1990ರಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಯಾವ ಪ್ರಮುಖ ಐಟಿ ಕಂಪನಿಯನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿತ್ತು, ಇದರಿಂದ ರಾಜ್ಯವು ತಂತ್ರಜ್ಞಾನ ಹಬ್ ಆಗಿ ಬರುವುದನ್ನು ಸೂಚಿಸುತ್ತದೆ?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Infosys",
+            "answer_kannada": "ಇನ್ಫೋಸಿಸ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Wipro",
+            "answer_kannada": "ವಿಪ್ರೊ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Mindtree",
+            "answer_kannada": "ಮೈಂಡ್‌ಟ್ರೀ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Mphasis",
+            "answer_kannada": "ಎಮ್‌ಫಾಸಿಸ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "In 1990, how did the Indian government’s policies affect the technology landscape in Karnataka?",
+        "question_kannada": "1990ರಲ್ಲಿ ಭಾರತೀಯ ಸರ್ಕಾರದ ನೀತಿಗಳು ಕರ್ನಾಟಕದ ತಂತ್ರಜ್ಞಾನ ನೋಟವನ್ನು ಹೇಗೆ ಬದಲಾಯಿಸಿದವು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Increased focus on agriculture",
+            "answer_kannada": "ಕೃಷಿಯ ಪ್ರೋತ್ಸಾಹಿಸಲು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Limited growth in tech startups",
+            "answer_kannada": "ಟೆಕ್ ಸ್ಟಾರ್ಟ್‌ಅಪ್‌ಗಳಲ್ಲಿ ತೊಂದರೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Opened doors for foreign investments in IT",
+            "answer_kannada": "ಐಟಿಯಲ್ಲಿ ವಿದೇಶಿ ಹೂಡಿಕೆಗಳಿಗೆ ಬಾಗಿಲು ತೆರೆದಿತು",
+            "isCorrect": true
+          },
+          {
+            "answer": "Reduced employment opportunities",
+            "answer_kannada": "ಉದ್ಯೋಗಾವಕಾಶಗಳನ್ನು ಕಡಿಮೆ ಮಾಡಿತು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What significant economic change occurred in India in 1991, benefiting the IT sector?",
+        "question_kannada": "1991ರಲ್ಲಿ ಭಾರತದಲ್ಲಿ ಏನೆಲ್ಲಾ ಪ್ರಮುಖ ಆರ್ಥಿಕ ಬದಲಾವಣೆ ನಡೆಯಿತು, ಇದು ಐಟಿ ಕ್ಷೇತ್ರಕ್ಕೆ ಪ್ರಯೋಜನ ನೀಡಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Introduction of the Green Revolution",
+            "answer_kannada": "ಹಸಿರು ಕ್ರಾಂತಿಯ ಪರಿಚಯ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Liberalization of the Indian economy",
+            "answer_kannada": "ಭಾರತದ ಆರ್ಥಿಕ ಉಲ್ಲೇಖ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Implementation of the New Economic Policy",
+            "answer_kannada": "ಹೊಸದಿನಗಳ ಆರ್ಥಿಕ ನೀತಿಗಳ ಅನುಷ್ಠಾನ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Establishment of the IT Park",
+            "answer_kannada": "ಐಟಿ ಪಾರ್ಕ್ ಸ್ಥಾಪನೆ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "How did the liberalization of the economy in 1991 impact Bengaluru?",
+        "question_kannada": "1991ರಲ್ಲಿ ಆರ್ಥಿಕ ಉದಾರೀಕರಣವು ಬೆಂಗಳೂರು ನಗರದ ಮೇಲೆ ಹೇಗೆ ಪರಿಣಾಮ ಬೀರಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "It reduced the number of tech companies.",
+            "answer_kannada": "ಇದು ತಂತ್ರಜ್ಞಾನ ಕಂಪನಿಗಳ ಸಂಖ್ಯೆಯನ್ನು ಕಡಿಮೆ ಮಾಡಿತು.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It recognized Bengaluru as a hub for software development.",
+            "answer_kannada": "ಇದು ಬೆಂಗಳೂರುವನ್ನು ಸಾಫ್ಟ್‌ವೇರ್ ಅಭಿವೃದ್ಧಿಯ ಕೇಂದ್ರವಾಗಿ ಗುರುತಿಸಿತು.",
+            "isCorrect": true
+          },
+          {
+            "answer": "It led to a decline in technology investments.",
+            "answer_kannada": "ಇದು ತಂತ್ರಜ್ಞಾನ ಹೂಡಿಕೆಗಳಲ್ಲಿ ಇಳಿಕೆಗೆ ಕಾರಣವಾಯಿತು.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It focused solely on agriculture.",
+            "answer_kannada": "ಇದು ಕೃಷಿಯ ಮೇಲೆ ಮಾತ್ರ ಕೇಂದ್ರೀಕೃತಗೊಳ್ಳಿತು.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which notable policy was introduced in 1991 to support the IT sector in Karnataka?",
+        "question_kannada": "1991ರಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಐಟಿ ಕ್ಷೇತ್ರವನ್ನು ಬೆಂಬಲಿಸಲು ಯಾವ ಪ್ರಮುಖ ನೀತಿ ಪರಿಚಯಿಸಲಾಯಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Karnataka Education Policy",
+            "answer_kannada": "ಕರ್ನಾಟಕ ಶಿಕ್ಷಣ ನೀತಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Karnataka IT Policy",
+            "answer_kannada": "ಕರ್ನಾಟಕ ಐಟಿ ನೀತಿ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Karnataka Agriculture Policy",
+            "answer_kannada": "ಕರ್ನಾಟಕ ಕೃಷಿ ನೀತಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Karnataka Infrastructure Policy",
+            "answer_kannada": "ಕರ್ನಾಟಕ ಮೂಲಸೌಕರ್ಯ ನೀತಿ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which important software company was founded in 1992 that would later become a key player in the IT industry in Karnataka?",
+        "question_kannada": "1992ರಲ್ಲಿ ಸ್ಥಾಪಿತವಾದ ಯಾವ ಪ್ರಮುಖ ಸಾಫ್ಟ್‌ವೇರ್ ಕಂಪನಿಯು ನಂತರದಲ್ಲಿ ಕರ್ನಾಟಕದ ಐಟಿ ಉದ್ಯಮದಲ್ಲಿ ಪ್ರಮುಖ ಪಾತ್ರವಹಿಸಲಿದೆ?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "TCS",
+            "answer_kannada": "ಟಿಸಿ‌ಎಸ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Mindtree",
+            "answer_kannada": "ಮೈಂಡ್‌ಟ್ರೀ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Infosys",
+            "answer_kannada": "ಇನ್ಫೋಸಿಸ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "HCL",
+            "answer_kannada": "ಎಚ್‌ಸಿಎಲ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What was the primary focus of IT companies emerging in Karnataka during the early 1990s?",
+        "question_kannada": "1990ರ ಆರಂಭದಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಉದಯಿಸುತ್ತಿದ್ದ ಐಟಿ ಕಂಪನಿಯು ಮೂಲಭೂತವಾಗಿ ಯಾವ ಕ್ಷೇತ್ರವನ್ನು ಕೇಂದ್ರೀಕೃತಗೊಳಿಸಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Manufacturing hardware",
+            "answer_kannada": "ಹಾರ್ಡ್‌ವೇರ್ ತಯಾರಿಸುತ್ತಿದೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Providing software development and IT services",
+            "answer_kannada": "ಸಾಫ್ಟ್‌ವೇರ್ ಅಭಿವೃದ್ಧಿ ಮತ್ತು ಐಟಿ ಸೇವೆಗಳನ್ನು ನೀಡುತ್ತಿದೆ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Developing consumer electronics",
+            "answer_kannada": "ಗ್ರಾಹಕ ಎಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ಅಭಿವೃದ್ಧಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Building agricultural technologies",
+            "answer_kannada": "ಕೃಷಿ ತಂತ್ರಜ್ಞಾನಗಳನ್ನು ನಿರ್ಮಿಸುವುದು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "How did Karnataka’s government support the IT industry in 1992?",
+        "question_kannada": "1992ರಲ್ಲಿ ಕರ್ನಾಟಕ ಸರ್ಕಾರವು ಐಟಿ ಉದ್ಯಮವನ್ನು ಹೇಗೆ ಬೆಂಬಲಿಸಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "By establishing IT parks",
+            "answer_kannada": "ಐಟಿ ಪಾರ್ಕ್‌ಗಳನ್ನು ಸ್ಥಾಪಿಸುವ ಮೂಲಕ",
+            "isCorrect": true
+          },
+          {
+            "answer": "By limiting foreign investments",
+            "answer_kannada": "ವಿದೇಶಿ ಹೂಡಿಕೆಗಳನ್ನು ನಿರ್ಬಂಧಿಸುವ ಮೂಲಕ",
+            "isCorrect": false
+          },
+          {
+            "answer": "By focusing on agriculture",
+            "answer_kannada": "ಕೃಷಿಯ ಮೇಲೆ ಕೇಂದ್ರೀಕರಿಸುವ ಮೂಲಕ",
+            "isCorrect": false
+          },
+          {
+            "answer": "By creating a tech incubator",
+            "answer_kannada": "ಟೆಕ್ ಇಂಕ್ಯೂಬೇಟರ್ ಅನ್ನು ರಚಿಸುವ ಮೂಲಕ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "In 1993, which significant tech park was established in Karnataka to promote IT and software companies?",
+        "question_kannada": "1993ರಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಐಟಿ ಮತ್ತು ಸಾಫ್ಟ್‌ವೇರ್ ಕಂಪನಿಗಳನ್ನು ಉತ್ತೇಜಿಸಲು ಯಾವ ಪ್ರಮುಖ ತಂತ್ರಜ್ಞಾನ ಪಾರ್ಕ್ ಸ್ಥಾಪಿಸಲಾಯಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Electronics City",
+            "answer_kannada": "ಇಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ನಗರ",
+            "isCorrect": false
+          },
+          {
+            "answer": "International Tech Park (ITPL)",
+            "answer_kannada": "ಅಂತಾರಾಷ್ಟ್ರೀಯ ತಂತ್ರಜ್ಞಾನ ಪಾರ್ಕ್ (ಐಟಿಪಿಎಲ್)",
+            "isCorrect": false
+          },
+          {
+            "answer": "Software Technology Parks of India (STPI)",
+            "answer_kannada": "ಭಾರತದ ಸಾಫ್ಟ್‌ವೇರ್ ತಂತ್ರಜ್ಞಾನ ಪಾರ್ಕ್‌ಗಳು (ಎಸಿಟಿಪಿಐ)",
+            "isCorrect": true
+          },
+          {
+            "answer": "Bangalore IT Park",
+            "answer_kannada": "ಬೆಂಗಳೂರು ಐಟಿ ಪಾರ್ಕ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which major software company was founded in 1993 in Karnataka, becoming a key player in the IT sector?",
+        "question_kannada": "1993ರಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಸ್ಥಾಪಿತವಾದ ಯಾವ ಪ್ರಮುಖ ಸಾಫ್ಟ್‌ವೇರ್ ಕಂಪನಿಯು ಐಟಿ ಕ್ಷೇತ್ರದಲ್ಲಿ ಪ್ರಮುಖ ಪಾತ್ರವಹಿಸಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Infosys",
+            "answer_kannada": "ಇನ್ಫೋಸಿಸ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Wipro",
+            "answer_kannada": "ವಿಪ್ರೊ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Mphasis",
+            "answer_kannada": "ಎಮ್‌ಫಾಸಿಸ್",
+            "isCorrect": true
+          },
+          {
+            "answer": "HCL",
+            "answer_kannada": "ಎಚ್‌ಸಿಎಲ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What was the focus of the Karnataka government’s initiatives in the tech sector during 1993?",
+        "question_kannada": "1993 ರಲ್ಲಿ ಕರ್ನಾಟಕ ಸರ್ಕಾರದ ತಂತ್ರಜ್ಞಾನ ಕ್ಷೇತ್ರದಲ್ಲಿ ಮಾಡಿದ ಮುಂದಾಳತ್ವಗಳ ಆಕರ್ಷಣೆಯ ಕೇಂದ್ರಬಿಂದುವು ಏನು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Agricultural development",
+            "answer_kannada": "ಕೃಷಿ ಅಭಿವೃದ್ಧಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Promotion of software and IT services",
+            "answer_kannada": "ಸಾಫ್ಟ್‌ವೇರ್ ಮತ್ತು ಐಟಿ ಸೇವೆಗಳನ್ನು ಉತ್ತೇಜಿಸುವುದು",
+            "isCorrect": true
+          },
+          {
+            "answer": "Manufacturing of consumer goods",
+            "answer_kannada": "ಗ್ರಾಹಕ ವಸ್ತುಗಳ ಉತ್ಪಾದನೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Establishment of educational institutions",
+            "answer_kannada": "ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳ ಸ್ಥಾಪನೆ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What important organization was established in 1994 to promote the IT industry in India?",
+        "question_kannada": "1994ರಲ್ಲಿ ಭಾರತದಲ್ಲಿ ಐಟಿ ಉದ್ಯಮವನ್ನು ಉತ್ತೇಜಿಸಲು ಯಾವ ಪ್ರಮುಖ ಸಂಸ್ಥೆಯನ್ನು ಸ್ಥಾಪಿಸಲಾಯಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "NASSCOM",
+            "answer_kannada": "ನ್ಯಾಸ್ಕಾಂ",
+            "isCorrect": true
+          },
+          {
+            "answer": "STPI",
+            "answer_kannada": "ಎಸಿಟಿಪಿಐ",
+            "isCorrect": false
+          },
+          {
+            "answer": "C-DAC",
+            "answer_kannada": "ಸಿ-ಡಾಕ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "IEEE",
+            "answer_kannada": "ಐಇಇಇ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "How did NASSCOM contribute to Bengaluru's status in the IT sector?",
+        "question_kannada": "NASSCOM ಬೆಂಗಳೂರು ನಗರದಲ್ಲಿ ಐಟಿ ಕ್ಷೇತ್ರದ ಸ್ಥಾನವನ್ನು ಹೇಗೆ ಬೆಂಬಲಿಸಿದೆ?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "By focusing on hardware development",
+            "answer_kannada": "ಹಾರ್ಡ್‌ವೇರ್ ಅಭಿವೃದ್ಧಿಯ ಮೇಲೆ ಕೇಂದ್ರೀಕರಿಸುವ ಮೂಲಕ",
+            "isCorrect": false
+          },
+          {
+            "answer": "By promoting software and service companies",
+            "answer_kannada": "ಸಾಫ್ಟ್‌ವೇರ್ ಮತ್ತು ಸೇವಾ ಕಂಪನಿಗಳನ್ನು ಉತ್ತೇಜಿಸುವ ಮೂಲಕ",
+            "isCorrect": true
+          },
+          {
+            "answer": "By establishing educational institutions",
+            "answer_kannada": "ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳ ಸ್ಥಾಪನೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "By launching consumer electronics",
+            "answer_kannada": "ಗ್ರಾಹಕ ಎಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ಅನ್ನು ಪರಿಚಯಿಸುವ ಮೂಲಕ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What role did Bengaluru play in the activities of NASSCOM after its establishment?",
+        "question_kannada": "ನ್ಯಾಸ್ಕಾಂ ಸ್ಥಾಪನೆಯಾದ ನಂತರ ಬೆಂಗಳೂರು ಯಾವ ಕಾರ್ಯಗಳಲ್ಲಿ ಪಾತ್ರವಹಿಸಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "It was the primary headquarters.",
+            "answer_kannada": "ಇದು ಪ್ರಾಥಮಿಕ ಕಚೇರಿಯಲ್ಲಿತ್ತು.",
+            "isCorrect": true
+          },
+          {
+            "answer": "It had no involvement.",
+            "answer_kannada": "ಇದರಲ್ಲೇ ಭಾಗವಹಿಸಿಲ್ಲ.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It was one of the several regional offices.",
+            "answer_kannada": "ಇದು ಹಲವು ಪ್ರದೇಶೀಯ ಕಚೇರಿಗಳಲ್ಲಿ ಒಂದಾಗಿತ್ತು.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It served only as a technology testing ground.",
+            "answer_kannada": "ಇದು ತಂತ್ರಜ್ಞಾನ ಪರೀಕ್ಷಾ ಪ್ರದೇಶವಾಗಿ ಮಾತ್ರ ಕಾರ್ಯನಿರ್ವಹಿತ್ತಿತ್ತು.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What major technology infrastructure was launched in Bengaluru in 1995 to support IT companies?",
+        "question_kannada": "1995ರಲ್ಲಿ ಬೆಂಗಳೂರುದಲ್ಲಿ ಐಟಿ ಕಂಪನಿಗಳಿಗೆ ಬೆಂಬಲ ನೀಡಲು ಯಾವ ಪ್ರಮುಖ ತಂತ್ರಜ್ಞಾನ ಮೂಲಸೌಕರ್ಯ ಪ್ರಾರಂಭಿಸಲಾಯಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "International Tech Park (ITPL)",
+            "answer_kannada": "ಅಂತಾರಾಷ್ಟ್ರೀಯ ತಂತ್ರಜ್ಞಾನ ಪಾರ್ಕ್ (ಐಟಿಪಿಎಲ್)",
+            "isCorrect": true
+          },
+          {
+            "answer": "Electronic City",
+            "answer_kannada": "ಇಲೆಕ್ಟ್ರಾನಿಕ್ ನಗರ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Software Technology Parks of India (STPI)",
+            "answer_kannada": "ಭಾರತದ ಸಾಫ್ಟ್‌ವೇರ್ ತಂತ್ರಜ್ಞಾನ ಪಾರ್ಕ್‌ಗಳು (ಎಸಿಟಿಪಿಐ)",
+            "isCorrect": false
+          },
+          {
+            "answer": "Bangalore Palace IT Hub",
+            "answer_kannada": "ಬೆಂಗಳೂರು ಅರಮನೆ ಐಟಿ ಹಬ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which company launched its operations in India in 1995, becoming a significant player in the Indian tech market?",
+        "question_kannada": "1995ರಲ್ಲಿ ಭಾರತದ ತಂತ್ರಜ್ಞಾನ ಮಾರುಕಟ್ಟೆಯಲ್ಲಿ ಮಹತ್ವಪೂರ್ಣ ಪಾತ್ರವಹಿಸಿದ ಕಂಪನಿ ಯಾವುದು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Microsoft",
+            "answer_kannada": "ಮೈಸೊಫ್ಟ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Oracle",
+            "answer_kannada": "ಒರಾಕಲ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "IBM",
+            "answer_kannada": "ಐಬಿಎಂ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Cisco",
+            "answer_kannada": "ಸಿಸ್ಕೋ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "How did the establishment of ITPL in 1995 impact Karnataka's technology landscape?",
+        "question_kannada": "1995ರಲ್ಲಿ ಐಟಿಪಿಎಲ್ ಸ್ಥಾಪನೆಯು ಕರ್ನಾಟಕದ ತಂತ್ರಜ್ಞಾನ ನೋಟವನ್ನು ಹೇಗೆ ಪ್ರಭಾವಿತ ಮಾಡಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "It limited the growth of local startups.",
+            "answer_kannada": "ಇದು ಸ್ಥಳೀಯ ಸ್ಟಾರ್ಟ್‌ಅಪ್ಸ್‌ನ ಬೆಳವಣಿಗೆಗೆ ನಿರ್ಬಂಧಿತ ಮಾಡಿತು.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It attracted multinational IT companies to the region.",
+            "answer_kannada": "ಇದು ಬಹುರಾಷ್ಟ್ರೀಯ ಐಟಿ ಕಂಪನಿಗಳನ್ನು ಈ ಪ್ರದೇಶಕ್ಕೆ ಆಕರ್ಷಿತ ಮಾಡಿತು.",
+            "isCorrect": true
+          },
+          {
+            "answer": "It focused solely on manufacturing.",
+            "answer_kannada": "ಇದು ಮಾತ್ರ ಉತ್ಪಾದನೆಗೆ ಕೇಂದ್ರೀಕರಿತ್ತಿತ್ತು.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It decreased employment opportunities.",
+            "answer_kannada": "ಇದು ಉದ್ಯೋಗ ಅವಕಾಶಗಳನ್ನು ಕಡಿಮೆ ಮಾಡಿತು.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What was one of the major developments in the IT industry in Karnataka in 1996?",
+        "question_kannada": "1996ರಲ್ಲಿ ಕರ್ನಾಟಕದ ಐಟಿ ಉದ್ಯಮದಲ್ಲಿ ಏನು ಪ್ರಮುಖ ಬೆಳವಣಿಗೆ ನಡೆಯಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Launch of India's first mobile network",
+            "answer_kannada": "ಭಾರತದ ಮೊದಲ ಮೊಬೈಲ್ ನೆಟ್ವರ್ಕ್ ಅನ್ನು ಲಾಂಚ್ ಮಾಡುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Establishment of a new software development firm",
+            "answer_kannada": "ಹೊಸ ಸಾಫ್ಟ್‌ವೇರ್ ಅಭಿವೃದ್ಧಿ ಕಂಪನಿಯ ಸ್ಥಾಪನೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Creation of the Karnataka State IT Policy",
+            "answer_kannada": "ಕರ್ನಾಟಕ ರಾಜ್ಯ ಐಟಿ ನೀತಿ ರಚನೆ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Opening of the first tech incubator",
+            "answer_kannada": "ಮೊದಲ ಟೆಕ್ ಇಂಕ್ಯೂಬೇಟರ್ ಅನ್ನು ತೆರೆಯುವುದು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which significant event took place in Karnataka’s tech landscape in 1996, emphasizing the state’s growth in software services?",
+        "question_kannada": "1996ರಲ್ಲಿ ಕರ್ನಾಟಕದ ತಂತ್ರಜ್ಞಾನ ಕ್ಷೇತ್ರದಲ್ಲಿ ಯಾವ ಮಹತ್ವಪೂರ್ಣ ಘಟನೆ ನಡೆಯಿತು, ರಾಜ್ಯದ ಸೋಫ್ಟ್‌ವೇರ್ ಸೇವೆಗಳ ಬೆಳವಣಿಗೆಗೆ ಒತ್ತು ನೀಡಿದದ್ದು ಏನು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Launch of the first IT park",
+            "answer_kannada": "ಮೊದಲ ಐಟಿ ಪಾರ್ಕ್ ಅನ್ನು ಲಾಂಚ್ ಮಾಡುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Introduction of the first tech summit",
+            "answer_kannada": "ಮೊದಲ ತಂತ್ರಜ್ಞಾನ ಶಿಖರ ಸಭೆ ಪರಿಚಯಿಸುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Opening of the first software development company",
+            "answer_kannada": "ಮೊದಲ ಸಾಫ್ಟ್‌ವೇರ್ ಅಭಿವೃದ್ಧಿ ಕಂಪನಿಯ ತೆರೆಯುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Establishment of the Bangalore IT Cluster",
+            "answer_kannada": "ಬೆಂಗಳೂರು ಐಟಿ ಕ್ಲಸ್ಟರ್ ಸ್ಥಾಪನೆ",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "question": "In 1996, which Indian company was recognized for its significant contributions to the global software market?",
+        "question_kannada": "1996ರಲ್ಲಿ, ವಿಶ್ವ ಸೋಫ್ಟ್‌ವೇರ್ ಮಾರುಕಟ್ಟೆಯಲ್ಲಿ ಮಹತ್ವಪೂರ್ಣ ಕೊಡುಗೆಗಳನ್ನು ನೀಡಿದ ಭಾರತೀಯ ಕಂಪನಿಯು ಯಾವದು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Wipro",
+            "answer_kannada": "ವಿಪ್ರೊ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Infosys",
+            "answer_kannada": "ಇನ್ಫೋಸಿಸ್",
+            "isCorrect": true
+          },
+          {
+            "answer": "TCS",
+            "answer_kannada": "ಟಿಸಿಎಸ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "HCL",
+            "answer_kannada": "ಎಚ್‌ಸಿಎಲ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What significant milestone did Infosys achieve in 1997?",
+        "question_kannada": "1997ರಲ್ಲಿ ಇನ್ಫೋಸಿಸ್ ಏನು ಪ್ರಮುಖ ಸಾಧನೆ ಸಾಧಿಸಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Launched its first mobile application",
+            "answer_kannada": "ಇದಕ್ಕೆ ಮೊದಲ ಮೊಬೈಲ್ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಲಾಂಚ್ ಮಾಡಿತು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Became the first Indian company to list on the NASDAQ",
+            "answer_kannada": "NASDAQನಲ್ಲಿ ಪಟ್ಟಿ ಹಾಕುವ ಮೊದಲ ಭಾರತೀಯ ಕಂಪನಿಯಾಗಿದೆ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Established its first overseas office",
+            "answer_kannada": "ಮೊದಲ ಆಂತರಿಕ ಕಚೇರಿಯನ್ನು ಸ್ಥಾಪಿಸಿತು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Introduced the first Indian supercomputer",
+            "answer_kannada": "ಮೊದಲ ಭಾರತೀಯ ಸೂಪರ್‌ಕಂಪ್ಯೂಟರ್ ಅನ್ನು ಪರಿಚಯಿಸುವ ಮೂಲಕ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "In 1997, which major IT event showcased Bengaluru as a growing tech hub?",
+        "question_kannada": "1997ರಲ್ಲಿ, ಬೆಂಗಳೂರು ಯಾವ ಪ್ರಮುಖ ಐಟಿ ಘಟನೆಯು ಬೆಳೆಯುತ್ತಿರುವ ತಂತ್ರಜ್ಞಾನ ಕೇಂದ್ರವಾಗಿ ಹೊರಹೊಮ್ಮಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Bangalore IT Summit",
+            "answer_kannada": "ಬೆಂಗಳೂರು ಐಟಿ ಶಿಖರಸಭೆ",
+            "isCorrect": true
+          },
+          {
+            "answer": "India Internet World",
+            "answer_kannada": "ಭಾರತ ಇಂಟರ್ನೆಟ್ ವಿಶ್ವ",
+            "isCorrect": false
+          },
+          {
+            "answer": "World Trade Organization (WTO) Conference",
+            "answer_kannada": "ವಿಶ್ವ ವ್ಯಾಪಾರ ಸಂಘಟನೆ (ಡಬ್ಲ್ಯೂಟಿಓ) ಸಭೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Bangalore Tech Fest",
+            "answer_kannada": "ಬೆಂಗಳೂರು ಟೆಕ್ ಫೆಸ್ಟ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What impact did Infosys's NASDAQ listing in 1997 have on the Indian IT sector?",
+        "question_kannada": "1997ರಲ್ಲಿ ಇನ್ಫೋಸಿಸ್‌ನ NASDAQ ಲಿಸ್ಟಿಂಗ್ ಭಾರತೀಯ ಐಟಿ ಕ್ಷೇತ್ರದ ಮೇಲೆ ಏನು ಪರಿಣಾಮ ಬೀರಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "It discouraged investments in tech.",
+            "answer_kannada": "ಇದು ತಂತ್ರಜ್ಞಾನದ ಹೂಡಿಕೆಗಳನ್ನು ಹತಾಶಗೊಳಿಸಿತು.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It increased global visibility and investments in Indian IT companies.",
+            "answer_kannada": "ಇದು ಭಾರತೀಯ ಐಟಿ ಕಂಪನಿಗಳಲ್ಲಿನ ವಿಶ್ವಜ್ಞಾನದ ಮತ್ತು ಹೂಡಿಕೆಗಳನ್ನು ಹೆಚ್ಚಿಸಿತು.",
+            "isCorrect": true
+          },
+          {
+            "answer": "It limited the growth of software companies.",
+            "answer_kannada": "ಇದು ಸಾಫ್ಟ್‌ವೇರ್ ಕಂಪನಿಗಳ ಬೆಳವಣಿಗೆಗೆ ನಿರ್ಬಂಧಿತ ಮಾಡಿತು.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It shifted focus to manufacturing.",
+            "answer_kannada": "ಇದು ಉತ್ಪಾದನೆಯ ಕಡೆಗೆ ಗಮನ ಹರಿಸಿತು.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What landmark development occurred in Bengaluru in 1998 with the establishment of the International Tech Park (ITPL)?",
+        "question_kannada": "1998ರಲ್ಲಿ ಅಂತಾರಾಷ್ಟ್ರಿಯ ತಂತ್ರಜ್ಞಾನ ಪಾರ್ಕ್ (ITPL) ಸ್ಥಾಪನೆಯೊಂದಿಗೆ ಬೆಂಗಳೂರಿನಲ್ಲಿ ಯಾವ ಮಹತ್ವದ ಅಭಿವೃದ್ಧಿ ನಡೆದಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "It was the first IT park in India.",
+            "answer_kannada": "ಇದು ಭಾರತದ ಮೊದಲ ಐಟಿ ಪಾರ್ಕ್ ಆಗಿತ್ತು.",
+            "isCorrect": true
+          },
+          {
+            "answer": "It was the largest software company in India.",
+            "answer_kannada": "ಇದು ಭಾರತದ ಅತ್ಯಂತ ದೊಡ್ಡ ಸಾಫ್ಟ್‌ವೇರ್ ಕಂಪನಿಯಾಗಿದೆ.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It was the first incubator for startups.",
+            "answer_kannada": "ಇದು ಸ್ಟಾರ್ಟ್‌ಅಪ್ಸ್‌ಗಾಗಿ ಮೊದಲ ಇಂಕ್ಯೂಬೇಟರ್ ಆಗಿತ್ತು.",
+            "isCorrect": false
+          },
+          {
+            "answer": "It was the first R&D facility established by a foreign company.",
+            "answer_kannada": "ಇದು ವಿದೇಶಿ ಕಂಪನಿಯು ಸ್ಥಾಪಿಸಿದ ಮೊದಲ ಎರ್ & ಡಿ ಒದಗಿಸುವಿಕೆ.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What was the main purpose of the International Tech Park (ITPL) established in 1998?",
+        "question_kannada": "1998ರಲ್ಲಿ ಸ್ಥಾಪಿತವಾದ ಅಂತಾರಾಷ್ಟ್ರಿಯ ತಂತ್ರಜ್ಞಾನ ಪಾರ್ಕ್ (ITPL) ನ ಮುಖ್ಯ ಉದ್ದೇಶ ಏನು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "To promote traditional industries",
+            "answer_kannada": "ಪ್ರಾಚೀನ ಉದ್ಯಮಗಳನ್ನು ಉತ್ತೇಜಿಸಲು",
+            "isCorrect": false
+          },
+          {
+            "answer": "To attract Indian and multinational IT companies",
+            "answer_kannada": "ಭಾರತೀಯ ಮತ್ತು ಬಹುರಾಷ್ಟ್ರೀಯ ಐಟಿ ಕಂಪನಿಗಳನ್ನು ಆಕರ್ಷಿಸಲು",
+            "isCorrect": true
+          },
+          {
+            "answer": "To develop agricultural technology",
+            "answer_kannada": "ಕೃಷಿ ತಂತ್ರಜ್ಞಾನವನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಲು",
+            "isCorrect": false
+          },
+          {
+            "answer": "To support non-IT sectors",
+            "answer_kannada": "ಐಟಿ ಹೊರತುಪಡಿಸಿದ ಕ್ಷೇತ್ರಗಳನ್ನು ಬೆಂಬಲಿಸಲು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which global tech appeal did Bengaluru gain with the establishment of ITPL in 1998?",
+        "question_kannada": "1998 ರಲ್ಲಿ ITPL ಸ್ಥಾಪನೆಯೊಂದಿಗೆ ಬೆಂಗ್ಳೂರಿನ ಐಟಿ ಕ್ಷೇತ್ರದಲ್ಲಿ ಯಾವ ವಿಶ್ವವ್ಯಾಪಿ ತಂತ್ರಜ್ಞಾನ ಆಕರ್ಷಣೆಯನ್ನು ಬೆಳೆಸಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Becoming a manufacturing hub",
+            "answer_kannada": "ಉತ್ಪಾದನಾ ಕೇಂದ್ರವಾಗುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Attracting foreign investments in IT",
+            "answer_kannada": "ಐಟಿಯಲ್ಲಿ ವಿದೇಶಿ ಹೂಡಿಕೆಗಳನ್ನು ಆಕರ್ಷಿಸಲು",
+            "isCorrect": true
+          },
+          {
+            "answer": "Launching mobile services",
+            "answer_kannada": "ಮೊಬೈಲ್ ಸೇವೆಗಳನ್ನು ಲಾಂಚ್ ಮಾಡುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Establishing agricultural technology parks",
+            "answer_kannada": "ಕೃಷಿ ತಂತ್ರಜ್ಞಾನ ಪಾರ್ಕ್‌ಗಳನ್ನು ಸ್ಥಾಪಿಸಲು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which important tech event occurred in 1999 that highlighted the growth of the IT sector in Karnataka?",
+        "question_kannada": "1999ರಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಐಟಿ ಕ್ಷೇತ್ರದ ಬೆಳವಣಿಗೆಯನ್ನು ತೋರಿಸಿದ ಮಹತ್ವಪೂರ್ಣ ತಂತ್ರಜ್ಞಾನ ಕಾರ್ಯಕ್ರಮ ಏನು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Launch of the first Indian smartphone",
+            "answer_kannada": "ಭಾರತದ ಮೊದಲ ಸ್ಮಾರ್ಟ್‌ಫೋನ್ ಅನ್ನು ಲಾಂಚ್ ಮಾಡುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Bangalore IT.COM Conference",
+            "answer_kannada": "ಬೆಂಗಳೂರು ಐಟಿ.ಕಾಮ್ ಶिखರ ಸಭೆ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Establishment of NASSCOM",
+            "answer_kannada": "ನ್ಯಾಸ್ಕಾಂ ಸ್ಥಾಪನೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Opening of ITPL",
+            "answer_kannada": "ಐಟಿಪಿಎಲ್ ಉದ್ಘಾಟನೆ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What was one of the notable achievements of Karnataka's IT sector in 1999?",
+        "question_kannada": "1999ರಲ್ಲಿ ಕರ್ನಾಟಕದ ಐಟಿ ಕ್ಷೇತ್ರದ ಯಾವುದಾದರೂ ಪ್ರಸಿದ್ಧ ಸಾಧನೆ ಏನು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Launch of the first Indian satellite",
+            "answer_kannada": "ಭಾರತದ ಮೊದಲ ಉಪಗ್ರಹವನ್ನು ಲಾಂಚ್ ಮಾಡುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Bengaluru became known as the 'Silicon Valley of India.'",
+            "answer_kannada": "ಬೆಂಗಳೂರು 'ಭಾರತದ ಸಿಲಿಕಾನ್ ವ್ಯಾಲಿ' ಎಂದೆನ್ನುತ್ತಿರುವುದು",
+            "isCorrect": true
+          },
+          {
+            "answer": "Opening of the first tech incubator",
+            "answer_kannada": "ಮೊದಲ ಟೆಕ್ ಇಂಕ್ಯೂಬೇಟರ್ ಅನ್ನು ತೆರೆಯುವುದು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Launch of mobile services",
+            "answer_kannada": "ಮೊಬೈಲ್ ಸೇವೆಗಳನ್ನು ಲಾಂಚ್ ಮಾಡುವುದು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "In 1999, which company was recognized as one of the leading software exporters from India?",
+        "question_kannada": "1999ರಲ್ಲಿ, ಯಾವ ಕಂಪನಿಯು ಭಾರತೀಯ ಸಾಫ್ಟ್‌ವೇರ್ ರಫ್ತುದಾರರಲ್ಲಿನ ಪ್ರಮುಖ ಕಂಪನಿಯಾಗಿ ಗುರುತಿಸಲಾಯಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "TCS",
+            "answer_kannada": "ಟಿಸಿಎಸ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Infosys",
+            "answer_kannada": "ಇನ್ಫೋಸಿಸ್",
+            "isCorrect": true
+          },
+          {
+            "answer": "Wipro",
+            "answer_kannada": "ವಿಪ್ರೊ",
+            "isCorrect": false
+          },
+          {
+            "answer": "HCL",
+            "answer_kannada": "ಎಚ್‌ಸಿಎಲ್",
+            "isCorrect": false
+          }
+        ]
+      }
+    ],
+    "2000s: The Growth of IT and Startups": [
+      {
+        "question": "What major development in IT infrastructure took place in Karnataka in 2000?",
+        "question_kannada": "2000ರಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಐಟಿ ಮೂಲಸೌಕರ್ಯದಲ್ಲಿ ಯಾವ ಪ್ರಮುಖ ಅಭಿವೃದ್ಧಿ ನಡೆಯಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Establishment of the first tech park",
+            "answer_kannada": "ಮೊದಲ ತಂತ್ರಜ್ಞಾನ ಪಾರ್ಕ್ ಸ್ಥಾಪನೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Launch of the Bangalore International Airport",
+            "answer_kannada": "ಬೆಂಗಳೂರು ಅಂತಾರಾಷ್ಟ್ರೀಯ ವಿಮಾನ ನಿಲ್ದಾಣ ಲಾಂಚ್ ಮಾಡುವುದು",
+            "isCorrect": true
+          },
+          {
+            "answer": "Opening of the Indian Institute of Management (IIM)",
+            "answer_kannada": "ಭಾರತೀಯ ನಿರ್ವಹಣಾ ಸಂಸ್ಥೆ (IIM) ಉದ್ಘಾಟನೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Inauguration of the Bangalore Metro",
+            "answer_kannada": "ಬೆಂಗಳೂರು ಮೆಟ್ರೋ ಉದ್ಘಾಟನೆ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which global tech giant established a significant presence in Bengaluru in 2000?",
+        "question_kannada": "2000ರಲ್ಲಿ, ಯಾವ ವಿಶ್ವ ವಾಣಿಜ್ಯ ದೈತ್ಯವು ಬೆಂಗಳೂರು ನಗರದಲ್ಲಿ ಮಹತ್ವದ ಹಾಜರಾತಿಯನ್ನು ಸ್ಥಾಪಿಸಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Google",
+            "answer_kannada": "ಗುಗಲ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "IBM",
+            "answer_kannada": "ಐಬಿಎಂ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Microsoft",
+            "answer_kannada": "ಮೈಕ್ರೋಸಾಫ್ಟ್",
+            "isCorrect": true
+          },
+          {
+            "answer": "Apple",
+            "answer_kannada": "ಆಪಲ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "How did the events of 2000 shape Karnataka's identity in the global tech landscape?",
+        "question_kannada": "2000ರ ಘಟನೆಗಳು ಕರ್ನಾಟಕದ ಗುರುತನ್ನು ಜಾಗತಿಕ ತಂತ್ರಜ್ಞಾನ ದೃಶ್ಯದಲ್ಲಿ ಹೇಗೆ ರೂಪಗೊಳಿಸಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "By limiting the scope of local startups",
+            "answer_kannada": "ಸ್ಥಳೀಯ ಸ್ಟಾರ್ಟಪ್‌ಗಳ ವ್ಯಾಪ್ತಿಯನ್ನು ಮಿತಿಗೊಳಿಸುವ ಮೂಲಕ",
+            "isCorrect": false
+          },
+          {
+            "answer": "By establishing it as a major IT hub attracting international companies",
+            "answer_kannada": "ಅದರನ್ನೊಂದು ಪ್ರಮುಖ ಐಟಿ ಕೇಂದ್ರವಾಗಿ ಸ್ಥಾಪಿಸುವ ಮೂಲಕ, ಅಂತರರಾಷ್ಟ್ರೀಯ ಕಂಪನಿಗಳನ್ನು ಆಕರ್ಷಿಸುತ್ತಿದೆ",
+            "isCorrect": true
+          },
+          {
+            "answer": "By focusing solely on agriculture",
+            "answer_kannada": "ಕೇವಲ ಕೃಷಿ ಮೇಲೆ ಗಮನ ಹರಿಸುವ ಮೂಲಕ",
+            "isCorrect": false
+          },
+          {
+            "answer": "By reducing investment in tech",
+            "answer_kannada": "ತಂತ್ರಜ್ಞಾನದಲ್ಲಿ ಹೂಡಿಕೆಯನ್ನು ಕಡಿಮೆ ಮಾಡುವುದು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "What major IT park was established in Bengaluru in 1998, accelerating the city's growth as a tech hub?",
+        "question_kannada": "1998ರಲ್ಲಿ ಬೆಂಗಳೂರು ನಗರದಲ್ಲಿ ಯಾವ ಪ್ರಮುಖ ಐಟಿ ಪಾರ್ಕ್ ಸ್ಥಾಪಿತವಾಗಿದ್ದು, ನಗರದ ತಂತ್ರಜ್ಞಾನ ಕೇಂದ್ರದ ಬೆಳವಣಿಗೆಯನ್ನು ವೇಗವರ್ಧಿತಗೊಳಿಸಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Electronic City",
+            "answer_kannada": "ಎಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ಸಿಟಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Manyata Tech Park",
+            "answer_kannada": "ಮಣ್ಯತಾ ಟೆಕ್ ಪಾರ್ಕ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "International Tech Park (ITPL)",
+            "answer_kannada": "ಅಂತಾರಾಷ್ಟ್ರೀಯ ತಂತ್ರಜ್ಞಾನ ಪಾರ್ಕ್ (ITPL)",
+            "isCorrect": true
+          },
+          {
+            "answer": "Bagmane Tech Park",
+            "answer_kannada": "ಬಾಗ್ಮಾನೆ ಟೆಕ್ ಪಾರ್ಕ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which global IT company expanded heavily in Bengaluru during the 2000s, setting up one of its largest R&D facilities?",
+        "question_kannada": "2000ರ ದಶಕದಲ್ಲಿ ಬೆಂಗಳೂರು ನಗರದಲ್ಲಿ ಯಾವ ಗ್ಲೋಬಲ್ ಐಟಿ ಕಂಪನಿಯು ಬಲವಾಗಿ ವಿಸ್ತಾರಗೊಳ್ಳಿತು ಮತ್ತು ತನ್ನ ಶ್ರೇಷ್ಠ R&D ಸೌಲಭ್ಯಗಳಲ್ಲಿ ಒಂದನ್ನು ಸ್ಥಾಪಿಸಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Intel",
+            "answer_kannada": "ಇಂಟೆಲ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Microsoft",
+            "answer_kannada": "ಮೈಕ್ರೋಸಾಫ್ಟ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "IBM",
+            "answer_kannada": "ಐಬಿಎಂ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Google",
+            "answer_kannada": "ಗುಗಲ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "In which year did Bengaluru officially become known as the 'Silicon Valley of India'?",
+        "question_kannada": "ಬೆಂಗಳೂರನ್ನು 'ಭಾರತದ ಸಿಲಿಕಾನ್ ಕಣಿವೆ' ಎಂದು ಯಾವ ವರ್ಷ ಅಧಿಕೃತವಾಗಿ ಹೆಸರಿಸಲಾಯಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "1998",
+            "answer_kannada": "1998",
+            "isCorrect": false
+          },
+          {
+            "answer": "2000",
+            "answer_kannada": "2000",
+            "isCorrect": false
+          },
+          {
+            "answer": "2002",
+            "answer_kannada": "2002",
+            "isCorrect": false
+          },
+          {
+            "answer": "2005",
+            "answer_kannada": "2005",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "question": "Which Bengaluru-based company, founded in 2000, became a leader in biotechnology?",
+        "question_kannada": "2000ರಲ್ಲಿ ಸ್ಥಾಪಿತವಾದ, ಬೆಂಗಳೂರಿನಲ್ಲಿ ಆಧಾರಿತ ಯಾವ ಕಂಪನಿಯು ಜೀವವಿಜ್ಞಾನದಲ್ಲಿ ನಾಯಕನಾಗಿ ಹೊರಹೊಮ್ಮಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Infosys",
+            "answer_kannada": "ಇನ್ಫೋಸಿಸ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Biocon",
+            "answer_kannada": "ಬಯೊಕಾನ್",
+            "isCorrect": true
+          },
+          {
+            "answer": "Wipro",
+            "answer_kannada": "ವಿಪ್ರೊ",
+            "isCorrect": false
+          },
+          {
+            "answer": "TCS",
+            "answer_kannada": "ಟಿಸಿಎಸ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "In 2008, which e-commerce platform was launched in Bengaluru, kickstarting the city’s startup ecosystem?",
+        "question_kannada": "2008ರಲ್ಲಿ, ಯಾವ ಇ-ಕಾಮರ್ಸ್ ವೇದಿಕೆ ಬೆಂಗಳೂರುನಲ್ಲಿ ಪ್ರಾರಂಭಿಸಲಾಯಿತು, ನಗರದ ಸ್ಟಾರ್ಟ್‌ಅಪ್ ಪರಿಸರ ವ್ಯವಸ್ಥೆಯನ್ನು ಪ್ರಾರಂಭಿಸಿದ್ದು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Amazon India",
+            "answer_kannada": "ಅಮೆಜಾನ್ ಇಂಡಿಯಾ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Snapdeal",
+            "answer_kannada": "ಸ್ನಾಪ್ಡೀಲ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Flipkart",
+            "answer_kannada": "ಫ್ಲಿಪ್ಕಾರ್ಟ್",
+            "isCorrect": true
+          },
+          {
+            "answer": "Myntra",
+            "answer_kannada": "ಮಿಂಟ್ರಾ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which Indian IT company, headquartered in Bengaluru, crossed $1 billion in revenue for the first time in 2004?",
+        "question_kannada": "ಯಾವ ಭಾರತೀಯ ಐಟಿ ಕಂಪನಿ, ಬೆಂಗಳೂರು ಮೂಲಕ, 2004ರಲ್ಲಿ ಮೊದಲ ಬಾರಿಗೆ 1 ಬಿಲಿಯನ್ ಡಾಲರ್ ಗಳನ್ನು ಮೀರಿಸಿದಂತೆ ಆದಾಯವನ್ನು ಸಾಧಿಸಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Infosys",
+            "answer_kannada": "ಇನ್ಫೋಸಿಸ್",
+            "isCorrect": true
+          },
+          {
+            "answer": "Wipro",
+            "answer_kannada": "ವಿಪ್ರೊ",
+            "isCorrect": false
+          },
+          {
+            "answer": "TCS",
+            "answer_kannada": "ಟಿಸಿಎಸ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "HCL",
+            "answer_kannada": "ಎಚ್‌ಸಿಎಲ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which software services company, originally a consumer goods firm, shifted its focus to IT in the early 2000s?",
+        "question_kannada": "ಯಾವ ಸಾಫ್ಟ್‌ವೇರ್ ಸೇವೆಗಳ ಕಂಪನಿ, ಮೂಲತಃ ಗ್ರಾಹಕ ಸರಕು ಕಂಪನಿಯಾಗಿದ್ದು, 2000ರ ದಶಕದ ಆರಂಭದಲ್ಲಿ ಐಟಿಗೆ ತನ್ನ ಗಮನವನ್ನು ವರ್ಗಾಯಿಸಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Infosys",
+            "answer_kannada": "ಇನ್ಫೋಸಿಸ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Cognizant",
+            "answer_kannada": "ಕಾಗ್ನಿಜೆಂಟ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Wipro",
+            "answer_kannada": "ವಿಪ್ರೊ",
+            "isCorrect": true
+          },
+          {
+            "answer": "HCL",
+            "answer_kannada": "ಎಚ್‌ಸಿಎಲ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which was the first government-sponsored technology innovation park set up in Karnataka in the 2000s?",
+        "question_kannada": "2000ರ ದಶಕದಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಸ್ಥಾಪಿಸಲಾದ ಮೊದಲ ಸರ್ಕಾರಿ ಪ್ರಾಯೋಜಿತ ತಂತ್ರಜ್ಞಾನ ಆವಿಷ್ಕಾರ ಪಾರ್ಕ್ ಯಾವುದು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Kormangala Startup Hub",
+            "answer_kannada": "ಕೋರ್ಮಂಗಲ ಸ್ಟಾರ್ಟ್‌ಅಪ್ ಹಬ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "STPI",
+            "answer_kannada": "ಎಸ್‌ಟಿಪಿಐ",
+            "isCorrect": true
+          },
+          {
+            "answer": "IT Corridor",
+            "answer_kannada": "ಐಟಿ ಕಾರಿಡಾರ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Electronic City Phase 2",
+            "answer_kannada": "ಎಲೆಕ್ಟ್ರಾನಿಕ್ ಸಿಟಿ ಹಂತ 2",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Who was the founder of the Indian Institute of Science (IISc) in Bengaluru, which fostered many tech innovations in the 2000s?",
+        "question_kannada": "ಬೆಂಗಳೂರುನಲ್ಲಿ ಹಲವಾರು ತಂತ್ರಜ್ಞಾನಾಭಿವೃದ್ಧಿಗಳಿಗೆ ಕಾರಣವಾಗಿದ್ದ ಭಾರತೀಯ ವಿಜ್ಞಾನ ಸಂಸ್ಥೆ (IISc) ಯ ಸ್ಥಾಪಕರಾರು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "J.R.D. Tata",
+            "answer_kannada": "ಜೆ.ಆರ್.ಡಿ ಟಾಟಾ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Jamsetji Tata",
+            "answer_kannada": "ಜಮ್ಶೆಟ್‌ಜಿ ಟಾಟಾ",
+            "isCorrect": true
+          },
+          {
+            "answer": "N. R. Narayana Murthy",
+            "answer_kannada": "ಎನ್.ಆರ್.ನಾರಾಯಣ ಮೂರ್ತಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Azim Premji",
+            "answer_kannada": "ಅಜೀಮ್ ಪ್ರೇಮ್‌ಜಿ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which government initiative in the 2000s aimed at promoting the growth of the IT sector in Karnataka?",
+        "question_kannada": "2000ರ ದಶಕದಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಐಟಿ ವಲಯದ ಬೆಳವಣಿಗೆಯನ್ನು ಉತ್ತೇಜಿಸಲು ಯಾವ ಸರ್ಕಾರಿ ಯೋಜನೆ ಜಾರಿಗೆ ಬಂದಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "IT for All",
+            "answer_kannada": "ಎಲ್ಲರಿಗೂ ಐಟಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "E-Governance Initiative",
+            "answer_kannada": "ಇ-ಆಡಳಿತ ಯೋಜನೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Vision 2020",
+            "answer_kannada": "ವಿಷನ್ 2020",
+            "isCorrect": false
+          },
+          {
+            "answer": "Millennium IT Policy",
+            "answer_kannada": "ಮಿಲ್ಲೇನಿಯಮ್ ಐಟಿ ಪಾಲಿಸಿ",
+            "isCorrect": true
+          }
+        ]
+      }
+    ],
+    "2010s: The Rise of Startups and Innovation": [
+      {
+        "question": "Which Bengaluru-based company became India’s largest online education platform, launched in 2011?",
+        "question_kannada": "2011ರಲ್ಲಿ ಪ್ರಾರಂಭವಾದ ಭಾರತದಲ್ಲಿನ ಅತಿದೊಡ್ಡ ಆನ್‌ಲೈನ್ ಶಿಕ್ಷಣ ವೇದಿಕೆ ಯಾವುದು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Unacademy",
+            "answer_kannada": "ಅನಕ್ಯಾಡೆಮಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "BYJU'S",
+            "answer_kannada": "ಬೈಜೂಸ್",
+            "isCorrect": true
+          },
+          {
+            "answer": "Vedantu",
+            "answer_kannada": "ವೇದಾಂತು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Toppr",
+            "answer_kannada": "ಟಾಪರ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which food delivery startup, founded in 2014 in Bengaluru, became a household name in India?",
+        "question_kannada": "2014ರಲ್ಲಿ ಬೆಂಗಳೂರು ಮೂಲದ ಯಾವ ಆಹಾರ ವಿತರಣಾ ಸ್ಟಾರ್ಟ್‌ಅಪ್, ಭಾರತದಲ್ಲಿ ಗೃಹ ಪರಿಚಿತವಾಗಿ ಹೆಸರು ಮಾಡಿದುದು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Zomato",
+            "answer_kannada": "ಜೊಮ್ಯಾಟೊ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Uber Eats",
+            "answer_kannada": "ಉಬರ್ ಈಟ್ಸ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Swiggy",
+            "answer_kannada": "ಸ್ವಿಗ್ಗಿ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Foodpanda",
+            "answer_kannada": "ಫುಡ್ಪಾಂಡಾ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "In 2016, Bengaluru became the largest destination for startups in India. What sector was most prominent in the startup ecosystem?",
+        "question_kannada": "2016ರಲ್ಲಿ, ಬೆಂಗಳೂರು ಭಾರತದಲ್ಲಿನ ಸ್ಟಾರ್ಟ್‌ಅಪ್ಸ್‌ಗಳ ದೊಡ್ಡ ತಾಣವಾಯಿತು. ಸ್ಟಾರ್ಟ್‌ಅಪ್ ಪರಿಸರ ವ್ಯವಸ್ಥೆಯಲ್ಲಿ ಯಾವ ವಲಯವು ಪ್ರಮುಖವಾಗಿತ್ತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Fintech",
+            "answer_kannada": "ಫಿನ್‌ಟೆಕ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "E-commerce",
+            "answer_kannada": "ಇ-ಕಾಮರ್ಸ್",
+            "isCorrect": true
+          },
+          {
+            "answer": "AI & ML",
+            "answer_kannada": "ಎಐ ಮತ್ತು ಎಂಎಲ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Edtech",
+            "answer_kannada": "ಎಡ್‌ಟೆಕ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which mobile wallet and payment service, founded in Bengaluru, saw massive growth during the 2010s?",
+        "question_kannada": "ಮೊಬೈಲ್ ವಾಲೆಟ್ ಮತ್ತು ಪೇಮೆಂಟ್ ಸೇವೆ, 2010ರ ದಶಕದಲ್ಲಿ ಬೆಂಗಳೂರು ಮೂಲದಾಗಿ ಪ್ರಾರಂಭವಾಯಿತು ಮತ್ತು ಅಪಾರ ಬೆಳವಣಿಗೆ ಕಂಡಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Paytm",
+            "answer_kannada": "ಪೇಟಿಎಂ",
+            "isCorrect": false
+          },
+          {
+            "answer": "PhonePe",
+            "answer_kannada": "ಫೋನ್‌ಪೇ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Google Pay",
+            "answer_kannada": "ಗೂಗಲ್ ಪೇ",
+            "isCorrect": false
+          },
+          {
+            "answer": "FreeCharge",
+            "answer_kannada": "ಫ್ರೀಚಾರ್ಜ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "In 2013, Karnataka's government introduced which fund to support IT startups in the state?",
+        "question_kannada": "2013ರಲ್ಲಿ, ಕರ್ನಾಟಕ ಸರ್ಕಾರವು ರಾಜ್ಯದ ಐಟಿ ಸ್ಟಾರ್ಟ್‌ಅಪ್ಸ್‌ಗಳಿಗೆ ಬೆಂಬಲ ನೀಡಲು ಯಾವ ನಿಧಿಯನ್ನು ಪರಿಚಯಿಸಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Karnataka Startup Mission",
+            "answer_kannada": "ಕರ್ಣಾಟಕ ಸ್ಟಾರ್ಟ್‌ಅಪ್ ಮಿಷನ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Karnataka Information Technology Venture Capital Fund",
+            "answer_kannada": "ಕರ್ಣಾಟಕ ಮಾಹಿತಿ ತಂತ್ರಜ್ಞಾನ ವೆಂಚರ್ ಕ್ಯಾಪಿಟಲ್ ನಿಧಿ",
+            "isCorrect": true
+          },
+          {
+            "answer": "IT Growth Accelerator Fund",
+            "answer_kannada": "ಐಟಿ ಗ್ರೋತ್ ಅಕ್ಸಿಲರೇಟರ್ ನಿಧಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Startup Karnataka Initiative",
+            "answer_kannada": "ಸ್ಟಾರ್ಟ್‌ಅಪ್ ಕರ್ನಾಟಕ ಮುಂದಾಳ್ವಿ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which online cab aggregator, headquartered in Bengaluru, became a major player in India’s transport sector during the 2010s?",
+        "question_kannada": "ಯಾವ ಆನ್‌ಲೈನ್ ಕ್ಯಾಬ್ ಏಗ್ರಿಗೇಟರ್, ಬೆಂಗಳೂರು ಮೂಲಕ, 2010ರ ದಶಕದಲ್ಲಿ ಭಾರತದಲ್ಲಿ ಪ್ರಮುಖ ಆಟಗಾರನಾಗಿ ಹೊರಹೊಮ್ಮಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Uber",
+            "answer_kannada": "ಉಬರ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Lyft",
+            "answer_kannada": "ಲಿಫ್ಟ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Meru",
+            "answer_kannada": "ಮೇರು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Ola",
+            "answer_kannada": "ಓಲಾ",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "question": "Which 2015 government initiative aimed to boost startups and entrepreneurship across India, with Bengaluru playing a major role?",
+        "question_kannada": "2015ರಲ್ಲಿ ಪ್ರಾರಂಭಿಸಲಾದ ಯಾವ ಸರ್ಕಾರಿ ಮುಂದಾಳ್ವಿ ಭಾರತಾದ್ಯಂತ ಸ್ಟಾರ್ಟಪ್‌ಗಳು ಮತ್ತು ಉದ್ಯಮಶೀಲತೆಯನ್ನು ಉತ್ತೇಜಿಸುವ ಉದ್ದೇಶ ಹೊಂದಿತ್ತು, ಇದರಲ್ಲಿ ಬೆಂಗಳೂರು ಪ್ರಮುಖ ಪಾತ್ರ ವಹಿಸಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Make in India",
+            "answer_kannada": "ಮೇಕ್ ಇನ್ ಇಂಡಿಯಾ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Digital India",
+            "answer_kannada": "ಡಿಜಿಟಲ್ ಇಂಡಿಯಾ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Startup India",
+            "answer_kannada": "ಸ್ಟಾರ್ಟಪ್ ಇಂಡಿಯಾ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Smart Cities Mission",
+            "answer_kannada": "ಸ್ಮಾರ್ಟ್ ಸಿಟೀಸ್ ಮಿಷನ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which global summit, hosted in Bengaluru in 2018, brought attention to Karnataka’s tech and startup ecosystem?",
+        "question_kannada": "2018ರಲ್ಲಿ ಬೆಂಗಳೂರಿನಲ್ಲಿ ನಡೆದ ಜಾಗತಿಕ ಶೃಂಗಸಭೆಯು ಕರ್ನಾಟಕದ ತಂತ್ರಜ್ಞಾನ ಮತ್ತು ಸ್ಟಾರ್ಟ್‌ಅಪ್ ಪರಿಸರ ವ್ಯವಸ್ಥೆಗೆ ಗಮನಸೆಳೆಯಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "World Startup Summit",
+            "answer_kannada": "ವಿಶ್ವ ಸ್ಟಾರ್ಟಪ್ ಶೃಂಗಸಭೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Tech for India Summit",
+            "answer_kannada": "ಟೆಕ್ ಫಾರ್ ಇಂಡಿಯಾ ಶೃಂಗಸಭೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Bengaluru Tech Summit",
+            "answer_kannada": "ಬೆಂಗಳೂರು ಟೆಕ್ ಶೃಂಗಸಭೆ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Digital Future Forum",
+            "answer_kannada": "ಡಿಜಿಟಲ್ ಫ್ಯೂಚರ್ ಫೋರಂ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "In 2016, which Bengaluru-based logistics startup disrupted the industry with its innovative technology for delivery services?",
+        "question_kannada": "2016ರಲ್ಲಿ, ಬೆಂಗಳೂರು ಮೂಲದ ಯಾವ ಲಾಜಿಸ್ಟಿಕ್ಸ್ ಸ್ಟಾರ್ಟ್‌ಅಪ್ ತನ್ನ ವಿತರಣಾ ಸೇವೆಗಳಿಗೆ ನಾವೀನ್ಯ ತಂತ್ರಜ್ಞಾನವನ್ನು ಬಳಸಿಕೊಂಡು ಉದ್ಯಮವನ್ನು ಭಾರೀ ಪ್ರಭಾವಿತ ಮಾಡಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Delhivery",
+            "answer_kannada": "ಡೆಲಿವರಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Dunzo",
+            "answer_kannada": "ಡುಂಜೊ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Shadowfax",
+            "answer_kannada": "ಶಾಡೋಫ್ಯಾಕ್ಸ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Locus",
+            "answer_kannada": "ಲೋಕಸ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which 2015 digital financial platform founded in Bengaluru gained prominence through UPI (Unified Payments Interface)?",
+        "question_kannada": "2015ರಲ್ಲಿ ಪ್ರಾರಂಭವಾದ ಯಾವ ಡಿಜಿಟಲ್ ಹಣಕಾಸು ವೇದಿಕೆ, UPI (ಯುನಿಫೈಡ್ ಪೇಮೆಂಟ್ಸ್ ಇಂಟರ್‌ಫೇಸ್) ಮೂಲಕ ಪ್ರಸಿದ್ಧಿ ಪಡೆದಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Razorpay",
+            "answer_kannada": "ರೆಜರ್‌ಪೇ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Paytm",
+            "answer_kannada": "ಪೇಟಿಎಂ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Mobikwik",
+            "answer_kannada": "ಮೊಬಿಕ್ವಿಕ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "PhonePe",
+            "answer_kannada": "ಫೋನ್‌ಪೇ",
+            "isCorrect": true
+          }
+        ]
+      }
+    ],
+    "2020s: Emerging Technologies and Future Prospects": [
+      {
+        "question": "Which initiative, launched by Karnataka in 2021, aims to accelerate digital technology and innovation in the state?",
+        "question_kannada": "2021ರಲ್ಲಿ ಕರ್ನಾಟಕ ಸರ್ಕಾರದ ಪ್ರಾರಂಭವಾದ ಯಾವ ಯೋಜನೆಯು ರಾಜ್ಯದ ಡಿಜಿಟಲ್ ತಂತ್ರಜ್ಞಾನ ಮತ್ತು ಆವಿಷ್ಕಾರವನ್ನು ವೇಗಗೊಳಿಸಲು ಉದ್ದೇಶಿಸಲಾಗಿದೆ?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Digital Karnataka",
+            "answer_kannada": "ಡಿಜಿಟಲ್ ಕರ್ನಾಟಕ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Karnataka 5G Mission",
+            "answer_kannada": "ಕರ್ಣಾಟಕ 5G ಮಿಷನ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Karnataka Digital Economy Mission",
+            "answer_kannada": "ಕರ್ಣಾಟಕ ಡಿಜಿಟಲ್ ಆರ್ಥಿಕ ಮಿಷನ್",
+            "isCorrect": true
+          },
+          {
+            "answer": "Digital Innovation Karnataka",
+            "answer_kannada": "ಡಿಜಿಟಲ್ ಇನೊವೇಶನ್ ಕರ್ನಾಟಕ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "In 2020, Bengaluru became known globally for its leadership in which emerging technology?",
+        "question_kannada": "2020ರಲ್ಲಿ, ಬೆಂಗಳೂರು ಯಾವ ಉದಯೋನ್ಮುಖ ತಂತ್ರಜ್ಞಾನದಲ್ಲಿನ ತನ್ನ ನಾಯಕತ್ವದಿಂದ ಜಾಗತಿಕವಾಗಿ ಪ್ರಸಿದ್ಧಿ ಪಡೆದಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "AI and Machine Learning",
+            "answer_kannada": "ಎಐ ಮತ್ತು ಮೆಷಿನ್ ಲರ್ನಿಂಗ್",
+            "isCorrect": true
+          },
+          {
+            "answer": "Cybersecurity",
+            "answer_kannada": "ಸೈಬರ್‌ಸುರಕ್ಷತೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Cloud Computing",
+            "answer_kannada": "ಕ್ಲೌಡ್ ಕಂಪ್ಯೂಟಿಂಗ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Data Analytics",
+            "answer_kannada": "ಡೇಟಾ ಅನಾಲಿಟಿಕ್ಸ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which 2022 fintech unicorn, based in Bengaluru, offers digital banking solutions and crossed $1 billion in valuation?",
+        "question_kannada": "2022ರಲ್ಲಿ, ಬೆಂಗಳೂರು ಮೂಲದ ಯಾವ ಫಿಂಟೆಕ್ ಯುನಿಕಾರ್ನ್ ಡಿಜಿಟಲ್ ಬ್ಯಾಂಕಿಂಗ್ ಪರಿಹಾರಗಳನ್ನು ನೀಡುತ್ತದೆ ಮತ್ತು 1 ಬಿಲಿಯನ್ ಡಾಲರ್ ಮೌಲ್ಯವನ್ನು ಮೀರಿಸಿದೆ?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Razorpay",
+            "answer_kannada": "ರೆಜರ್‌ಪೇ",
+            "isCorrect": false
+          },
+          {
+            "answer": "CRED",
+            "answer_kannada": "ಕ್ರೆಡ್",
+            "isCorrect": true
+          },
+          {
+            "answer": "Zerodha",
+            "answer_kannada": "ಜೆರೋಧಾ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Slice",
+            "answer_kannada": "ಸ್ಲೈಸ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which Bengaluru-based health-tech startup gained significant prominence in the 2020s with AI-powered health diagnostics?",
+        "question_kannada": "2020ರ ದಶಕದಲ್ಲಿ, ಎಐ-ಚಾಲಿತ ಆರೋಗ್ಯ ನಿದಾನ ಪದ್ಧತಿಗಳಿಂದ ಪ್ರಮುಖವಾಗಿದ್ದ ಬೆಂಗಳೂರು ಮೂಲದ ಆರೋಗ್ಯ ತಂತ್ರಜ್ಞಾನ ಸ್ಟಾರ್ಟ್‌ಅಪ್ ಯಾವುದು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Practo",
+            "answer_kannada": "ಪ್ರಾಕ್ಟೊ",
+            "isCorrect": false
+          },
+          {
+            "answer": "1mg",
+            "answer_kannada": "1ಎಮ್‌ಜಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "CureFit",
+            "answer_kannada": "ಕ್ಯೂರ್‌ಫಿಟ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "SigTuple",
+            "answer_kannada": "ಸಿಗ್‌ಟuple",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "question": "In 2023, which Karnataka city was ranked as one of the top startup ecosystems globally?",
+        "question_kannada": "2023ರಲ್ಲಿ, ಜಾಗತಿಕವಾಗಿ ಟಾಪ್ ಸ್ಟಾರ್ಟ್‌ಅಪ್ ಪರಿಸರ ವ್ಯವಸ್ಥೆಗಳಲ್ಲೊಂದು ಎಂಬ ಹಿರಿಮೆಯನ್ನು ಪಡೆದ ಕರ್ನಾಟಕದ ನಗರ ಯಾವದು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Mysuru",
+            "answer_kannada": "ಮೈಸೂರು",
+            "isCorrect": false
+          },
+          {
+            "answer": "Bengaluru",
+            "answer_kannada": "ಬೆಂಗಳೂರು",
+            "isCorrect": true
+          },
+          {
+            "answer": "Hubli",
+            "answer_kannada": "ಹುಬ್ಬಳ್ಳಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Mangaluru",
+            "answer_kannada": "ಮಂಗಳೂರು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which 2020 government policy in Karnataka focused on driving innovation in AI, blockchain, and cybersecurity?",
+        "question_kannada": "2020ರಲ್ಲಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಯಾವ ಸರ್ಕಾರಿ ನೀತಿ ಎಐ, ಬ್ಲಾಕ್‌ಚೇನ್, ಮತ್ತು ಸೈಬರ್‌ಸುರಕ್ಷತೆಯ ಆವಿಷ್ಕಾರಕ್ಕೆ ಒತ್ತು ನೀಡಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "AI for Karnataka",
+            "answer_kannada": "ಎಐ ಫಾರ್ ಕರ್ನಾಟಕ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Karnataka Blockchain Policy",
+            "answer_kannada": "ಕರ್ಣಾಟಕ ಬ್ಲಾಕ್‌ಚೇನ್ ನೀತಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Karnataka AI & Emerging Technologies Policy",
+            "answer_kannada": "ಕರ್ಣಾಟಕ ಎಐ & ಉದಯೋನ್ಮುಖ ತಂತ್ರಜ್ಞಾನ ನೀತಿ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Karnataka Cybersecurity Initiative",
+            "answer_kannada": "ಕರ್ಣಾಟಕ ಸೈಬರ್‌ಸುರಕ್ಷತಾ ಮುಂದಾಳ್ವಿ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which 2021 tech unicorn from Bengaluru offers a SaaS platform and achieved global recognition in digital payments?",
+        "question_kannada": "2021ರಲ್ಲಿ ಬೆಂಗಳೂರಿನಿಂದ ಬಂದ ಯಾವ ತಂತ್ರಜ್ಞಾನ ಯುನಿಕಾರ್ನ್ ಒಂದು SaaS ವೇದಿಕೆ ಒದಗಿಸುತ್ತೆ ಮತ್ತು ಡಿಜಿಟಲ್ ಪೇಮೆಂಟ್‌ಗಳಲ್ಲಿ ವಿಶ್ವ ಮಟ್ಟದಲ್ಲಿ ಖ್ಯಾತಿಯನ್ನು ಗಳಿಸಿದೆ?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Freshworks",
+            "answer_kannada": "ಫ್ರೆಶ್ವರ್ಕ್ಸ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Chargebee",
+            "answer_kannada": "ಚಾರ್ಜ್‌ಬೀ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Razorpay",
+            "answer_kannada": "ರೆಜರ್‌ಪೇ",
+            "isCorrect": true
+          },
+          {
+            "answer": "Postman",
+            "answer_kannada": "ಪೋಸ್ಟ್‌ಮನ್",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "In the 2020s, which Bengaluru-based company became a leader in edtech globally?",
+        "question_kannada": "2020ರ ದಶಕದಲ್ಲಿ, ಬೆಂಗಳೂರಿನಲ್ಲಿ ಆಧಾರಿತ ಯಾವ ಕಂಪನಿಯು ಜಾಗತಿಕವಾಗಿ ಎಡ್‌ಟೆಕ್‌ದಲ್ಲಿ ನಾಯಕತ್ವವನ್ನು ಸಾಧಿಸಿತು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "Unacademy",
+            "answer_kannada": "ಅನಕ್ಯಾಡೆಮಿ",
+            "isCorrect": false
+          },
+          {
+            "answer": "BYJU'S",
+            "answer_kannada": "ಬೈಜೂಸ್",
+            "isCorrect": true
+          },
+          {
+            "answer": "Simplilearn",
+            "answer_kannada": "ಸಿಂಪ್ಲಿಲರ್ನ್",
+            "isCorrect": false
+          },
+          {
+            "answer": "Vedantu",
+            "answer_kannada": "ವೇದಾಂತು",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "question": "Which global summit continues to be hosted in Bengaluru, showcasing advancements in technology and innovation?",
+        "question_kannada": "ತಂತ್ರಜ್ಞಾನ ಮತ್ತು ಆವಿಷ್ಕಾರಗಳಲ್ಲಿ ಪ್ರಗತಿಯನ್ನು ತೋರಿಸಲು ಬೆಂಗಳೂರಿನಲ್ಲಿ ನಿರಂತರವಾಗಿ ಏರ್ಪಡಿಸಲಾಗುವ ಜಾಗತಿಕ ಶೃಂಗಸಭೆಯೇನದು?",
+        "score": 2,
+        "options": [
+          {
+            "answer": "India Tech Summit",
+            "answer_kannada": "ಇಂಡಿಯಾ ಟೆಕ್ ಶೃಂಗಸಭೆ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Tech India Expo",
+            "answer_kannada": "ಟೆಕ್ ಇಂಡಿಯಾ ಎಕ್ಸ್‌ಪೊ",
+            "isCorrect": false
+          },
+          {
+            "answer": "Bengaluru Tech Summit",
+            "answer_kannada": "ಬೆಂಗಳೂರು ಟೆಕ್ ಶೃಂಗಸಭೆ",
+            "isCorrect": true
+          },
+          {
+            "answer": "India Innovation Forum",
+            "answer_kannada": "ಇಂಡಿಯಾ ಇನೊವೇಶನ್ ಫೋರಮ್",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  }
+}
