@@ -152,21 +152,10 @@ export default function QuizPage() {
         });
 
         if (!response.ok) {
-          setError("Failed to update score");
+          setError("Failed to update user stats");
           setShowSnackbar(true);
         } else {
-          const stage_response = await fetch("/api/updateStage", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ username }),
-          });
-
-          if (stage_response.ok) {
-            router.push("/pragati/#timeline");
-          } else {
-            setError("Failed to update stage");
-            setShowSnackbar(true);
-          }
+          router.push("/pragati/#timeline");
         }
       } catch (error) {
         setError("Failed to update record");

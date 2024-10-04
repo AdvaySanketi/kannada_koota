@@ -93,20 +93,30 @@ export default function PragatiPage() {
   React.useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await fetch("/users.json");
-        const data = await response.json();
-
         let username = localStorage.getItem("username");
 
-        const user = data.users.find((user) => user.username === username);
+        if (username) {
+          const response = await fetch("/api/getStage", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              username: username,
+            }),
+          });
 
-        if (user) {
-          setCurrentStage(user.stage);
+          if (!response.ok) {
+            setError("Failed to get stage");
+            setShowSnackbar(true);
+            return;
+          } else {
+            let result = await response.json();
+            setCurrentStage(result.stage);
+          }
         } else {
           setCurrentStage(0);
         }
       } catch (error) {
-        console.error("Error fetching users.json:", error);
+        console.error("Error fetching stage:", error);
       }
     };
 

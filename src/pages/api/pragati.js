@@ -36,9 +36,22 @@ export default async function handler(req, res) {
               .status(400)
               .json({ error: "Data is required for adding" });
           }
+
+          const user = await col.findOne({ username: data.username });
+
+          const updatedStage = user.stage + 1;
+          const updatedScore = user.score + data.score;
+          const updatedTime = user.time + data.time;
+
           result = await col.updateOne(
             { username: data.username },
-            { $set: data }
+            {
+              $set: {
+                stage: updatedStage,
+                score: updatedScore,
+                time: updatedTime,
+              },
+            }
           );
           res
             .status(200)

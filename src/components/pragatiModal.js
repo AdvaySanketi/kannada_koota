@@ -30,6 +30,7 @@ export const PragatiModal = ({ onClose }) => {
           username: username,
           score: 0,
           time: 0,
+          stage: 0,
         },
       }),
     });
@@ -40,27 +41,8 @@ export const PragatiModal = ({ onClose }) => {
       return;
     }
 
-    handleModalSubmit({ username });
-  };
-
-  const handleModalSubmit = async ({ username }) => {
-    try {
-      const response = await fetch("/api/recordUser", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username }),
-      });
-
-      if (response.ok) {
-        localStorage.setItem("username", username);
-        onClose();
-      } else {
-        setError("Failed to record username");
-        setShowSnackbar(true);
-      }
-    } catch (error) {
-      console.error("Failed to add record:", error);
-    }
+    localStorage.setItem("username", username);
+    onClose();
   };
 
   const closeSnackbar = () => {
