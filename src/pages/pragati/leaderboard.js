@@ -122,7 +122,9 @@ export default function LeaderboardPage() {
                   </td>
                   <td className="px-4 py-3">{user.username}</td>
                   <td className="px-4 py-3 text-right">{user.score}</td>
-                  <td className="px-4 py-3 text-right">{user.time}s</td>
+                  <td className="px-4 py-3 text-right">
+                    {user.time.toFixed(2)}s
+                  </td>
                 </tr>
               ))}
             </tbody>

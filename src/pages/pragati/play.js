@@ -26,6 +26,7 @@ export default function QuizPage() {
   const [totalScore, setTotalScore] = useState(0);
   const [timeLeft, setTimeLeft] = useState(15);
   const [isGameOver, setIsGameOver] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
   const [totalTime, setTotalTime] = useState(0);
   const [startTime, setStartTime] = useState(null);
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(null);
@@ -57,6 +58,7 @@ export default function QuizPage() {
     if (!isGameOver) {
       if (timeLeft === 0) {
         if (showAnswerFeedback) {
+          setIsClicked(false);
           handleNextQuestion();
         } else {
           setCorrectOptionIndex(
@@ -141,20 +143,23 @@ export default function QuizPage() {
   }, [isGameOver]);
 
   const handleOptionClick = (isCorrect, score, index) => {
-    setSelectedOptionIndex(index);
-    setCorrectOptionIndex(
-      currentQuestion.options.findIndex((opt) => opt.isCorrect)
-    );
-    if (isCorrect) {
-      setCurrentStreak((prev) => prev + 1);
-      setTotalScore((prev) => prev + score);
-    } else {
-      setCurrentStreak(0);
-    }
+    if (!isClicked) {
+      setIsClicked(true);
+      setSelectedOptionIndex(index);
+      setCorrectOptionIndex(
+        currentQuestion.options.findIndex((opt) => opt.isCorrect)
+      );
+      if (isCorrect) {
+        setCurrentStreak((prev) => prev + 1);
+        setTotalScore((prev) => prev + score);
+      } else {
+        setCurrentStreak(0);
+      }
 
-    setShowAnswerFeedback(true);
-    setTimeLeft(5);
-    setIsRunning(true);
+      setShowAnswerFeedback(true);
+      setTimeLeft(5);
+      setIsRunning(true);
+    }
   };
 
   const handleNextQuestion = () => {
