@@ -214,13 +214,17 @@ export default function PragatiPage() {
             <div className="flex items-center gap-2">
               <div className="bg-[hsl(200,100%,28%)] text-[hsl(180,100%,90%)] px-3 py-1 rounded-full text-sm font-medium">
                 {currentStage != timeline_data.length
-                  ? `Current Stage: ${timeline_data[currentStage].title}`
+                  ? currentStage > timeline_data.length
+                    ? "Quest Completed"
+                    : `Current Stage: ${timeline_data[currentStage].title}`
                   : "Quest Completed"}
               </div>
             </div>
             <div className="text-[hsl(180,100%,90%)] text-sm">
               {currentStage != timeline_data.length
-                ? `Stage ${currentStage + 1} / ${timeline_data.length}`
+                ? currentStage > timeline_data.length
+                  ? "With ❤️ by Kannada Koota"
+                  : `Stage ${currentStage + 1} / ${timeline_data.length}`
                 : "With ❤️ by Kannada Koota"}
             </div>
           </div>

@@ -36,6 +36,7 @@ export default function QuizPage() {
   const [isRunning, setIsRunning] = useState(true);
   const progressBarRef = useRef(null);
   const startTimeRef = useRef(null);
+  const timeoutRef = useRef(null);
 
   useEffect(() => {
     if (stage) {
@@ -53,22 +54,24 @@ export default function QuizPage() {
   }, [stage]);
 
   useEffect(() => {
-    if (timeLeft === 0) {
-      if (showAnswerFeedback) {
-        handleNextQuestion();
+    if (!isGameOver) {
+      if (timeLeft === 0) {
+        if (showAnswerFeedback) {
+          handleNextQuestion();
+        } else {
+          setCorrectOptionIndex(
+            currentQuestion.options.findIndex((opt) => opt.isCorrect)
+          );
+          setShowAnswerFeedback(true);
+          setTimeLeft(5);
+          setIsRunning(true);
+        }
       } else {
-        setCorrectOptionIndex(
-          currentQuestion.options.findIndex((opt) => opt.isCorrect)
-        );
-        setShowAnswerFeedback(true);
-        setTimeLeft(5);
-        setIsRunning(true);
+        const timerId = setInterval(() => {
+          setTimeLeft((prev) => prev - 1);
+        }, 1000);
+        return () => clearInterval(timerId);
       }
-    } else {
-      const timerId = setInterval(() => {
-        setTimeLeft((prev) => prev - 1);
-      }, 1000);
-      return () => clearInterval(timerId);
     }
   }, [timeLeft]);
 
@@ -91,15 +94,51 @@ export default function QuizPage() {
       }
     };
 
-    if (isRunning) {
-      startTimeRef.current = Date.now();
-      requestAnimationFrame(updateProgressBar);
+    if (!isGameOver) {
+      if (isRunning) {
+        startTimeRef.current = Date.now();
+        requestAnimationFrame(updateProgressBar);
+      }
+
+      return () => {
+        setIsRunning(false);
+      };
+    }
+  }, [isRunning, timeLeft]);
+
+  useEffect(() => {
+    if (isGameOver && !timeoutRef.current) {
+      timeoutRef.current = setTimeout(async () => {
+        try {
+          const username = localStorage.getItem("username");
+          const response = await fetch("/api/pragati", {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              action: "update",
+              data: {
+                username,
+                score: totalScore,
+                time: totalTime,
+              },
+            }),
+          });
+
+          if (!response.ok) {
+            setError("Failed to update user stats");
+            setShowSnackbar(true);
+          } else {
+            router.push("/pragati/#timeline");
+          }
+        } catch (error) {
+          setError("Failed to update record");
+          setShowSnackbar(true);
+        }
+      }, 5000);
     }
 
-    return () => {
-      setIsRunning(false);
-    };
-  }, [isRunning, timeLeft]);
+    return () => clearTimeout(timeoutRef.current);
+  }, [isGameOver]);
 
   const handleOptionClick = (isCorrect, score, index) => {
     setSelectedOptionIndex(index);
@@ -135,35 +174,6 @@ export default function QuizPage() {
   };
 
   if (isGameOver) {
-    setTimeout(async () => {
-      try {
-        const username = localStorage.getItem("username");
-        const response = await fetch("/api/pragati", {
-          method: "PUT",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            action: "update",
-            data: {
-              username,
-              score: totalScore,
-              time: totalTime,
-            },
-          }),
-        });
-
-        if (!response.ok) {
-          setError("Failed to update user stats");
-          setShowSnackbar(true);
-        } else {
-          router.push("/pragati/#timeline");
-        }
-      } catch (error) {
-        setError("Failed to update record");
-        setShowSnackbar(true);
-        console.error("Failed to update record:", error);
-      }
-    }, 10000);
-
     return (
       <div
         className={`bg-[hsl(210,100%,6%)] text-[hsl(180,100%,90%)] min-h-screen items-center justify-center flex flex-col ${fontBody.variable} ${fontHeading.variable}`}
